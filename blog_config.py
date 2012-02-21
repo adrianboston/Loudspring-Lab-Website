@@ -1,13 +1,13 @@
 # TITLE / SUBTITLE / AUTHOR
 # The title, subtitle, and author of the blog
-TITLE = "The Littlest Blog"
-SUBTITLE = ""
-AUTHOR = "Terry Bush"
-METADATA_TAGS = ['title', 'author']
+TITLE = "Loud>||spring>>|"
+SUBTITLE = "Make everyday a loudspring"
+AUTHOR = "Loudspring"
+METADATA_TAGS = ['title', 'author', 'image-feat', 'image-alt', 'style-single', 'is_page', 'type', 'size']
 
 # POSTS_PER_PAGE
 # The number of posts that will appear on each page of index.html
-POSTS_PER_PAGE = 15
+POSTS_PER_PAGE = 5
 
 # SUMMARY_DELIMITOR
 # Used to specify a breaking point from the beginning of the document to the

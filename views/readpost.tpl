@@ -2,13 +2,29 @@
 <html>
 <head>
   <title>{{title}}: {{post.meta['title']}}</title>
-  <link href="/static/styles/theballoonist.css" media="screen" rel="stylesheet" type="text/css" />
-</head>
-<body>
+  
+  % if post.meta['style-single']:
+	<link href="/static/styles/{{post.meta['style-single']}}" media="Screen" rel="stylesheet" type="text/css" />
+  % else:  
+    <link href="/static/styles/single.css" media="screen" rel="stylesheet" type="text/css" />
+  % end 
+	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="/static/styles/mobile.css" media="screen" rel="stylesheet" type="text/css" />
 
+</head>
+
+  % if post.meta['type'] == 'page':
+    <body id="singlepage">
+  % else:
+    <body id="singlepost">
+  % end
+      
 <div id="body-wrapper">
 
-<div id="blog-title"><a href="/">{{title}}</a></div>
+<div id="blog-brand"><a href="/">
+<div id="blog-title">{{title}}</div>
+<div id="blog-image"></div>
+</a></div>
 
 <div class="post">
   <div class="post-title">{{post.meta['title']}}</div>
@@ -32,7 +48,7 @@
 % end
 
 <div id="powered-by">
-<small>Powered by <a href="http://www.thelittlesthobo.com/">hobo</a>.</small>
+<small>Powered by <a href="http://www.heroku.com/">heroku</a>.</small>
 </div>
 
 </div>
