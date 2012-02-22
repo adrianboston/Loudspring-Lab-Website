@@ -1,7 +1,6 @@
 :title Mobile Apps
 :author Adrian
-:image-feat img/hobo.jpg
-:image-alt img/hobo.jpg
+:image-feat img/Loudspring/Filterfish-iPadEnglish-8.5x11rgb72dpi.jpg
 :style-single single.css
 :type post
 :size 1

@@ -5,32 +5,36 @@
   
   % if post.meta['style-single']:
 	<link href="/static/styles/{{post.meta['style-single']}}" media="Screen" rel="stylesheet" type="text/css" />
-  % else:  
-    <link href="/static/styles/single.css" media="screen" rel="stylesheet" type="text/css" />
+  % else:
+    <link href="/static/styles/single.css" media="Screen" rel="stylesheet" type="text/css" />
   % end 
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
-	<link href="/static/styles/mobile.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
 
 </head>
+
+  % imgFeat = "";
+  % if post.meta['image-feat']: imgFeat = "/static/" + post.meta['image-feat']
+
 
   % if post.meta['type'] == 'page':
     <body id="singlepage">
   % else:
     <body id="singlepost">
   % end
-      
-<div id="body-wrapper">
 
-<div id="blog-brand"><a href="/">
-<div id="blog-title">{{title}}</div>
-<div id="blog-image"></div>
-</a></div>
+  <div id="body-wrapper">
+
+<!-- header -->
+%include header.tpl
+<!-- header:end -->
 
 <div class="post">
   <div class="post-title">{{post.meta['title']}}</div>
   <div class="post-date">{{post.date.strftime('%B %d, %Y')}}</div>
   <div class="post-author">{{post.meta['author']}}</div>
   <div class="post-body">{{!post.contents}}</div>
+  <div class="post-image"><img src="{{imgFeat}}"/></div>
 </div>
 
 % if disqus_shortname:
@@ -47,9 +51,9 @@
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 % end
 
-<div id="powered-by">
-<small>Powered by <a href="http://www.heroku.com/">heroku</a>.</small>
-</div>
+<!-- footer -->
+%include footer.tpl
+<!-- footer:end -->
 
 </div>
 

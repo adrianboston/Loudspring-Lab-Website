@@ -3,6 +3,7 @@
  * Secondary Color: #748C8C #5D6A6A #285D5D #ADC5C5 #B3C5C5
  */
 
+/*
 @import url(http://fonts.googleapis.com/css?family=Trykker);
 @import url(http://fonts.googleapis.com/css?family=Oldenburg);
 @import url(http://fonts.googleapis.com/css?family=Overlock+SC);
@@ -11,12 +12,11 @@
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(http://fonts.googleapis.com/css?family=Cabin);
 @import url(http://fonts.googleapis.com/css?family=Nunito);
+*/
 
 @import url(http://fonts.googleapis.com/css?family=Duru+Sans);
 @import url(http://fonts.googleapis.com/css?family=Varela);
 @import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
-
-
 
 
 body {
@@ -45,7 +45,7 @@ a {
 #blog-brand {
   font-family: 'Duru Sans', serif;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   font-color: clear;
   margin: 0px 0px 20px 0px;	
 }
@@ -93,28 +93,35 @@ Float on top with relative position and z-index
     	left:50px;
     }
 
-/* Push on bottom with clear */
-#powered-by {
-  clear:both;
-  text-align: center;
-  margin: 10px 0px 0px 0px;
-}
 
 /* Post style */
 #home .post {
   position: relative;
-  width: 300px;
-  height: 280px;
+  width: 200px;
+  height: 180px;
   overflow:hidden;
   /* float the up to their neighbour */
   float:left;
   margin: 2px;
-  outline: 1px dotted black;
+  
+  border: 1px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
-#home .post:hover {
+#home .size-2 {
+  width: 400px;
+  height: 365px;	
 }
 
+#home .size-3 {
+  width: 600px;
+  height: 420px;	
+}
+
+.post-image-alt {
+  display:none
+}
 
 .post-date {
   text-align: right;
@@ -129,18 +136,14 @@ Float on top with relative position and z-index
   color: black;
   float: left;
   min-height: 3em;
-  background:white;
+  background: #D7D7D7;
   width: 100%;
+  padding: 0 0 0 5px;
 }
 
 /* Post title anchor is given the size of the enclosing div in code*/
 .post-title a {
   color: black;
-}
-
-
-.post-image {
-	
 }
 
 .post-author {
@@ -156,6 +159,25 @@ Float on top with relative position and z-index
 .post-summary {
   clear: both;
   margin: 5px 0px 30px 0px;
+}
+
+/* Push on bottom with clear */
+#footer {
+  clear:both;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+#footer ul li {
+   display: inline;
+   list-style: none;
+   margin:0 5px 0 5px;	
+}
+
+#powered-by {
+}
+
+.post-image-alt {
+	display: none;	
 }
 
 
@@ -296,7 +318,7 @@ td {
   vertical-align: top;
 }
 
-/* Extra tidbits
+/* Extra tidbits like greying out image
 */
 #home .post {
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */

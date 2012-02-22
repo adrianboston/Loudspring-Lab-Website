@@ -2,54 +2,56 @@
 <html>
 <head>
   <title>{{title}}</title>
-	<link href="/static/styles/home.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/static/styles/home.css" media="Screen" rel="stylesheet" type="text/css" />
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
-	<link href="/static/styles/mobile.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="home">
+
 <div id="body-wrapper">
 
-<div id="blog-brand"><a href="/">
-<div id="blog-title">{{title}}</div>
-<div id="blog-image"></div>
-<div id="blog-title">{{subtitle}}</div>
-</a></div>
+<!-- header -->
+%include header.tpl
+<!-- header:end -->
 
+
+<!-- Leave out menu
 <div id="menu">
 % for post in posts:
-  % if post.meta['type'] == 'page': # skip over posts
-  
+   % if post.meta['type'] == 'page': # skip over posts
     <div class="page">
       <div class="page-title"><a href="{{post.locator}}">{{post.meta['title']}}</a></div>
     </div>
    % end 
 % end
 </div>
+-->
 
 
 % for post in posts:
 
   % if post.meta['type'] == 'page': continue # skip over those marked, type=page
 
-  % sizew = 200; sizeh = 180; backgrnd = "" #set defaults for size and background url if needed  
+  % sizew = 200; sizeh = 180; backgrnd = "" #set defaults for size and background url if needed
+  % imgFeat = ""; imgAlt = ""; backgrnd = ""; backgrndAlt = "";
   
   % if post.meta['image-feat']: imgFeat = "/static/" + post.meta['image-feat']
-  % if imgFeat: backgrnd = "background:url(" + imgFeat + ")" + " top left no-repeat"
-  % if post.meta['image-alt']: imgAlt = "/static/" + post.meta['image-alt']
-  % if imgAlt: backgrndAlt = "background:url('" + imgAlt + "')" + " top left no-repeat"
+  % if imgFeat!="": backgrnd = "background:url(" + imgFeat + ")" + " top left no-repeat"
+  % #if post.meta['image-alt']: imgAlt = "/static/" + post.meta['image-alt']
+  % # if imgAlt!="": backgrndAlt = "background:url('" + imgAlt + "')" + " top left no-repeat"
+
+  % if imgFeat=="": isimg = "noimg" 
+  % else: isimg = "img"
   
-  % if post.meta['size']: 
-    % sizew = int(post.meta['size']) * sizew
-    % sizeh = int(post.meta['size']) * sizeh
-  %end  
+  % size = 0
+  % if post.meta['size']: size = post.meta['size'] 
   
     <a href="{{post.locator}}"> <!-- enclosing anchor -->
    
-<!--    <div class="post" style="width:{{sizew}}px; height:{{sizeh}}px; {{backgrnd}}"> -->
 <!-- post -->
 	
-    <div class="post" style="width:{{sizew}}px; height:{{sizeh}}px;">
+    <div class="post size-{{post.meta['size']}} {{isimg}}"  >
     
 	<!-- title -->
     <div class="post-title">{{post.meta['title']}}
@@ -58,9 +60,10 @@
 
 	<!-- image -->
     <div class="post-image"><img src="{{imgFeat}}"/></div>
+    <div class="post-image-alt"><img src="{{imgAlt}}"/></div>
     
 	<!-- summary -->
-    <div class="post-summary">
+    <div class="post-summary" >
       {{!post.summary}}
       <div class="post-more-link">
         <a href="{{post.locator}}">...more</a>
@@ -77,18 +80,16 @@
   </a> <!-- anchor around post end -->
 % end
 
+<!--
 <div id="page-navigation">
-<div id="prev">{{!'<a href="/'+(str(page-1))+'">Previous</a>' if has_prev else 'Previous'}}</div>
-<div id="next">{{!'<a href="/'+(str(page+1))+'">Next</a>' if has_next else 'Next'}}</div>
+<div id="prev">{{!'<a href="/'+(str(page-1))+'"><img src="/static/img/Loudspring/REV-icon.png" height="20px"/></a>' if has_prev else 'x'}}</div>
+<div id="next">{{!'<a href="/'+(str(page+1))+'"><img src="/static/img/Loudspring/FFWD-icon.png" height="20px"/></a>' if has_next else 'x'}}</div>
 </div>
+-->
 
-
-<div id="footer">
-</div>
-
-<div id="powered-by">
-<small>Powered by <a href="http://www.heroku.com/">heroku</a>.</small>
-</div>
+<!-- footer -->
+%include footer.tpl
+<!-- footer:end -->
 
 </div>
 </body>

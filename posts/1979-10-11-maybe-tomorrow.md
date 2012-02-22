@@ -8,11 +8,14 @@
 <p>Loudspring is a Digital Agency offering the following range of services.</p>
 ~~
 <p>MOBILE APPS</p>
+
+<p>iPhone, iPad and Android development.
 <p>The App is the new website. It's why we focus on designing and creating custom Apps that provide an engaging mix of User Experience and Business Marketing. Our designers and developers have been there since the very beginning, releasing Apps when only 500 existed on the iTunes Store.</p>
 
 <p>WEB APPLICATIONS</p>
 
-<p>We push the limits of Web solutions for your project. Our experts are strong in Drupal, Django, RubyOnRails, WordPress, Java, and .NET. Our team has worked on massive, scalable n-tier systems interfacing with Oracle, Sybase and EMC Storage Area Network systems since the mid-90s. We bring that million dollar technology to the Small &amp; Medium-Sized Business. We host these sites on fully-scalable, redundant and load-balanced Cloud servers.</p>
+<p>Drupal, Django, RubyOnRails, WordPress, Java, and .NET. hosted on scalable Cloud servers</p>
+
 <p>DESIGNED for SOCIAL MEDIA</p>
 <p>Today&#8217;s digital marketing boils down to engaging consumers in an earnest two-way relationship. It&#8217;s not like the days of push advertising. You can&#8217;t go viral without an enthusiastic public. And, without a level of trust, you will never get an enthusiastic public. That means a constant level of interaction between consumer and producer.</p>
 <p>&#8220;Designed for social&#8221; is our major line of thinking behind our design.</p>

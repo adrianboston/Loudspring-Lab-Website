@@ -23,4 +23,4 @@ USE_HEROKU = True
 # Disqus is a free system used to manage comments at the bottom of blog posts.
 # After signing up, you will be issued a shortname -- put it here.  By default
 # developer mode of the script is enabled.
-DISQUS_SHORTNAME = ""
+DISQUS_SHORTNAME = "Loudspring"
