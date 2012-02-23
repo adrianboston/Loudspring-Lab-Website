@@ -3,23 +3,30 @@
 <head>
   <title>{{title}}</title>
 	<link href="/static/styles/home.css" media="Screen" rel="stylesheet" type="text/css" />
+	<link href="/static/styles/sizes.css" media="Screen" rel="stylesheet" type="text/css" />
+	
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
+    % include easing.tpl #include javascript for vgrid and easing
 </head>
 
-<body id="home">
+% import random
+% pic = random.randint(0, 4)
 
+<body id="home" class="img-{{pic}}">
 <div id="body-wrapper">
 
 <!-- header -->
 %include header.tpl
 <!-- header:end -->
 
+% from lib.util import val, switchon
 
 <!-- Leave out menu
 <div id="menu">
 % for post in posts:
-   % if post.meta['type'] == 'page': # skip over posts
+  % type = val(post.meta,'type')
+  % if type == 'page':
     <div class="page">
       <div class="page-title"><a href="{{post.locator}}">{{post.meta['title']}}</a></div>
     </div>
@@ -28,39 +35,36 @@
 </div>
 -->
 
+<div id="main">
 
 % for post in posts:
 
-  % if post.meta['type'] == 'page': continue # skip over those marked, type=page
-
+  % type = val(post.meta,'type')
+  % if type == None or type == 'page': continue
+  
   % sizew = 200; sizeh = 180; backgrnd = "" #set defaults for size and background url if needed
-  % imgFeat = ""; imgAlt = ""; backgrnd = ""; backgrndAlt = "";
   
-  % if post.meta['image-feat']: imgFeat = "/static/" + post.meta['image-feat']
-  % if imgFeat!="": backgrnd = "background:url(" + imgFeat + ")" + " top left no-repeat"
-  % #if post.meta['image-alt']: imgAlt = "/static/" + post.meta['image-alt']
-  % # if imgAlt!="": backgrndAlt = "background:url('" + imgAlt + "')" + " top left no-repeat"
-
-  % if imgFeat=="": isimg = "noimg" 
-  % else: isimg = "img"
+  % imgfeat = val(post.meta,'image-feat')
+  % imgalt = val(post.meta,'image-alt')
+  % imgtag = switchon(imgfeat,"img", "nonimg")
   
-  % size = 0
-  % if post.meta['size']: size = post.meta['size'] 
-  
+  % rank = val(post.meta,'rank', "0")
+   
     <a href="{{post.locator}}"> <!-- enclosing anchor -->
    
-<!-- post -->
-	
-    <div class="post size-{{post.meta['size']}} {{isimg}}"  >
+	<!-- post -->
+    <div class="post rank-{{rank}} {{imgtag}}">
     
 	<!-- title -->
-    <div class="post-title">{{post.meta['title']}}
-<!--      <a style="width:{{sizew}}px; height:{{sizeh}}px; display:block" href="{{post.locator}}">{{post.meta['title']}}</a>-->
-    </div>
+    <div class="post-title">{{post.meta['title']}}</div>
 
 	<!-- image -->
-    <div class="post-image"><img src="{{imgFeat}}"/></div>
-    <div class="post-image-alt"><img src="{{imgAlt}}"/></div>
+    %if imgfeat: 
+      <div class="post-image"><img src="/static/{{imgfeat}}"/></div>
+    % end
+    %if imgfeat: 
+      <div class="post-image-alt"><img src="/static/{{imgalt}}"/></div>
+    % end
     
 	<!-- summary -->
     <div class="post-summary" >
@@ -80,12 +84,15 @@
   </a> <!-- anchor around post end -->
 % end
 
+
 <!--
 <div id="page-navigation">
 <div id="prev">{{!'<a href="/'+(str(page-1))+'"><img src="/static/img/Loudspring/REV-icon.png" height="20px"/></a>' if has_prev else 'x'}}</div>
 <div id="next">{{!'<a href="/'+(str(page+1))+'"><img src="/static/img/Loudspring/FFWD-icon.png" height="20px"/></a>' if has_next else 'x'}}</div>
 </div>
 -->
+
+</div>
 
 <!-- footer -->
 %include footer.tpl

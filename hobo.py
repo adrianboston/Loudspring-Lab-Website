@@ -17,6 +17,8 @@ import blog_config
 from lib.markdown2 import markdown
 from lib.bottle import route, run, view, template, error, static_file, abort
 
+from lib.util import val
+
 
 # I N I T I A L I Z A T I O N #################################################
 
@@ -51,6 +53,8 @@ SUMMARY_DELIMITER = blog_config.SUMMARY_DELIMITER \
         if hasattr(blog_config, 'SUMMARY_DELIMITER') else '~~'
 USE_HEROKU = blog_config.USE_HEROKU \
         if hasattr(blog_config, 'USE_HEROKU') else True
+USE_WSGI = blog_config.USE_WSGI \
+        if hasattr(blog_config, 'USE_WSGI') else False        
 DISQUS_SHORTNAME = blog_config.DISQUS_SHORTNAME \
         if hasattr(blog_config, 'DISQUS_SHORTNAME') else ''
 
@@ -197,12 +201,14 @@ def error404(code=None):
 
 # E X E C U T I O N ###########################################################
 
-
 process_blog_posts()
-if USE_HEROKU:
-    run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
+if USE_WSGI:
+	os.chdir(os.path.dirname(__file__)) 
+	 
+elif USE_HEROKU:
+	run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
 else:
-    run(host="localhost", port=8080)
+	run(host="localhost", port=8080)
 
 
 # E N D   O F   F I L E #######################################################

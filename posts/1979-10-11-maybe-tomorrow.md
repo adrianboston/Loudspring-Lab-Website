@@ -1,7 +1,6 @@
 :title About Us
 :author Adrian
 :image-feat img/hobo.jpg
-:image-alt img/hobo.jpg
 :style-single page.css
 :type page
 

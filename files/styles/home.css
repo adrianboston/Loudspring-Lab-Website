@@ -40,6 +40,11 @@ a {
   width: 900px;
 }
 
+/* Header conains blog brand */
+#header {
+	margin: 0 0 40px 0;	
+}
+
 /* Blog info
 */
 #blog-brand {
@@ -97,26 +102,17 @@ Float on top with relative position and z-index
 /* Post style */
 #home .post {
   position: relative;
-  width: 200px;
-  height: 180px;
   overflow:hidden;
+  
+  /* default if size missing */
+
   /* float the up to their neighbour */
   float:left;
-  margin: 2px;
+  margin: 0px 10px 10px 0px;
   
   border: 1px solid black;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-}
-
-#home .size-2 {
-  width: 400px;
-  height: 365px;	
-}
-
-#home .size-3 {
-  width: 600px;
-  height: 420px;	
 }
 
 .post-image-alt {
@@ -166,6 +162,7 @@ Float on top with relative position and z-index
   clear:both;
   text-align: center;
   margin: 10px 0 0 0;
+  font-size: 1.1 em;
 }
 #footer ul li {
    display: inline;
@@ -316,6 +313,16 @@ table {
 
 td {
   vertical-align: top;
+}
+
+.alignleft {
+	float: left;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.alignright {
+	float: right;	
 }
 
 /* Extra tidbits like greying out image

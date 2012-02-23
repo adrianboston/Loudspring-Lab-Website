@@ -3,7 +3,7 @@
 TITLE = "Loud>||spring>>|"
 SUBTITLE = "Make everyday a loudspring"
 AUTHOR = "Loudspring"
-METADATA_TAGS = ['title', 'author', 'image-feat', 'image-alt', 'style-single', 'is_page', 'type', 'size']
+METADATA_TAGS = ['title', 'author', 'image-feat', 'image-alt', 'style-single', 'is_page', 'type', 'rank']
 
 # POSTS_PER_PAGE
 # The number of posts that will appear on each page of index.html
@@ -18,6 +18,11 @@ SUMMARY_DELIMITER = "~~"
 # Toggled as True/False if the system will or will not be deployed as a Heroku
 # app, respectively.
 USE_HEROKU = True
+
+# USE_WSGI
+# Toggled as True/False if the system will or will not be deployed as a WSGI
+# app, respectively.
+USE_WSGI = False
 
 # DISQUS_SHORTNAME
 # Disqus is a free system used to manage comments at the bottom of blog posts.

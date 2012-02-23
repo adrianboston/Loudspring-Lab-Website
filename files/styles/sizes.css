@@ -1,0 +1,61 @@
+/* 
+
+*/
+
+/*
+.width-1, .width-2, .width-3, .width-4, .width-5 {
+	width: 180px;
+}
+
+.width-6, .width-7, .width-8, .width-9, .width-10 {
+	width: 180px;	
+}
+
+.height-1, .height-2, .height-3, .height-4, .height-5 {
+	height: 200px;	
+}
+
+.height-6, .height-7, .height-8, .height-9, .height-10 {
+	height: 400px;	
+}
+*/
+
+/* Sizes for home */
+#home .rank-0 {
+  width: 200px;
+  height: 180px;	
+}
+
+#home .rank-1 {
+  width: 200px;
+  height: 360px;	
+}
+
+#home .rank-2 {
+  width: 400px;
+  height: 180px;	
+}
+
+#home .rank-3 {
+  width: 400px;
+  height: 360px;	
+}
+
+/* Images show on loop */
+
+.img-0 {
+    background : url("/static/img/Loudspring/Loudspring_1.png") left no-repeat;
+}
+
+.img-1 {
+	background : url("/static/img/Loudspring/Loudspring_2.png") left no-repeat;	
+}
+
+.img-2 {
+	background : url("/static/img/Loudspring/Loudspring_3.png") left no-repeat;	
+}
+
+.img-1 {
+	background : url("/static/img/Loudspring/Loudspring_4.png") left no-repeat;	
+}
+

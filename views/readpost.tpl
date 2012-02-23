@@ -3,7 +3,10 @@
 <head>
   <title>{{title}}: {{post.meta['title']}}</title>
   
-  % if post.meta['style-single']:
+  % from lib.util import val
+
+  % style = val(post.meta, 'style-single')
+  % if style:
 	<link href="/static/styles/{{post.meta['style-single']}}" media="Screen" rel="stylesheet" type="text/css" />
   % else:
     <link href="/static/styles/single.css" media="Screen" rel="stylesheet" type="text/css" />
@@ -13,14 +16,17 @@
 
 </head>
 
-  % imgFeat = "";
-  % if post.meta['image-feat']: imgFeat = "/static/" + post.meta['image-feat']
+  % iscomment = val(post.meta,'comment')
+  % imgfeat = val(post.meta,'image-feat')
+  % type = val(post.meta,'type')
+  
+  % import random
+  % pic = random.randint(0, 4)
 
-
-  % if post.meta['type'] == 'page':
-    <body id="singlepage">
+  % if type == 'page':
+    <body id="singlepage" class="img-{{pic}}">
   % else:
-    <body id="singlepost">
+    <body id="singlepost" class="img-{{pic}}">
   % end
 
   <div id="body-wrapper">
@@ -29,15 +35,22 @@
 %include header.tpl
 <!-- header:end -->
 
+<div id="main"> <!-- main -->
+
 <div class="post">
   <div class="post-title">{{post.meta['title']}}</div>
   <div class="post-date">{{post.date.strftime('%B %d, %Y')}}</div>
   <div class="post-author">{{post.meta['author']}}</div>
   <div class="post-body">{{!post.contents}}</div>
-  <div class="post-image"><img src="{{imgFeat}}"/></div>
+  % if imgfeat:
+    <div class="post-image"><img src="/static/{{imgfeat}}"/></div>
+  % end  
 </div>
 
-% if disqus_shortname:
+</div> <!-- main:end -->
+
+
+% if iscomment and disqus_shortname:
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = '{{disqus_shortname}}';

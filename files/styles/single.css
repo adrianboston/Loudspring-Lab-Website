@@ -10,7 +10,6 @@ body {
   font-size: 1em;	
 }
 
-
 .post {
   width: 90%;
   margin: 30px 0; 
@@ -21,16 +20,40 @@ body {
 }
 
 .post-title {
-  font-size: 1.4em;	
+  font-size: .9em;	
+  color: black;
+  float: right;
+  margin: 0px;
+}
+
+.post-body h2 {
   color: black;
   float: left;
-  margin: 0 0 10px 0;
+  min-height: .8em;
+  width: 100%;
+  padding: 0 0 0 0px;
+}
+
+.post-body h4 {
+  color: black;
+  float: left;
+  min-height: .9em;
+  width: 100%;
+  padding: 0 0 0 0px;
 }
 
 .post-date, .post-author {
 	display:none;
 }
 
+/* Clear the body on this single page */
 .post-body {
   clear: both;
 }
+
+
+
+.post-image {
+	display: none;
+}
+
