@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>{{title}}</title>
@@ -20,7 +20,7 @@
 %include header.tpl
 <!-- header:end -->
 
-% from lib.util import val, switchon
+% from lib.util import *
 
 <!-- Leave out menu
 <div id="menu">
@@ -35,36 +35,35 @@
 </div>
 -->
 
-<div id="main">
+<div id="center">
 
 % for post in posts:
 
   % type = val(post.meta,'type')
   % if type == None or type == 'page': continue
   
-  % sizew = 200; sizeh = 180; backgrnd = "" #set defaults for size and background url if needed
+  % # sizew = 200; sizeh = 180; backgrnd = "" #set defaults for size and background url if needed
   
   % imgfeat = val(post.meta,'image-feat')
   % imgalt = val(post.meta,'image-alt')
   % imgtag = switchon(imgfeat,"img", "nonimg")
   
-  % rank = val(post.meta,'rank', "0")
+  % rank = int(val(post.meta,'rank', "0"))
+  
+  % sizew = 200 if rank <= 1 else 400
    
-    <a href="{{post.locator}}"> <!-- enclosing anchor -->
+    <a href="{{post.locator}}">
    
-	<!-- post -->
-    <div class="post rank-{{rank}} {{imgtag}}">
+    <div class="post rank-{{rank}} {{imgtag}}">	<!-- post -->
     
 	<!-- title -->
     <div class="post-title">{{post.meta['title']}}</div>
-
+    <!-- stripped summary -->
+    
 	<!-- image -->
     %if imgfeat: 
-      <div class="post-image"><img src="/static/{{imgfeat}}"/></div>
-    % end
-    %if imgfeat: 
-      <div class="post-image-alt"><img src="/static/{{imgalt}}"/></div>
-    % end
+      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" /></div>
+    % end    
     
 	<!-- summary -->
     <div class="post-summary" >
@@ -73,15 +72,21 @@
         <a href="{{post.locator}}">...more</a>
       </div>
     </div> <!-- post-summary:end -->
-
+    
     <!-- meta info -->
     <div class="post-meta">
       <div class="post-date">{{post.date.strftime('%B %d, %Y')}}</div>
       <div class="post-author">{{post.meta['author']}}</div>    	  
     </div>
     
-  </div> <!-- post:end -->
-  </a> <!-- anchor around post end -->
+        <div class="post-tiny" >
+      % summ = remove_html_tags(post.summary)
+      {{summ}}
+        <a href="{{post.locator}}">>></a>
+    </div> <!-- post-summary:end -->
+
+  </div><!-- post:end -->
+</a> <!-- anchor around post end -->
 % end
 
 

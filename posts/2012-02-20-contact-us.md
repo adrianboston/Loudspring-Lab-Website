@@ -1,6 +1,7 @@
 :title Contact Us
 :author Adrian
-:image-feat img/hobo.jpg
+:image-feat static/img/etc/hobo.jpg
+:image-alt &#169 Siemens PLM
 :style-single page.css
 :type page
 

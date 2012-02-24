@@ -1,18 +1,19 @@
 :title Communication Design
 :author Adrian
-:image-feat img/Loudspring/NYT_Screen-1000x763rgb72dpi.jpg
+:image-feat /static/img/etc/F_TKKSummers_2888453574_81070b80bf_900x1165rgb400dpi80.jpg
+:image-alt &#169 TKK Summers
 :style-single single.css
 :type post
 :rank 0
 
-<h2>Design for today.</h2>
-<h4>That means Speed, Page ranking, Social media and Beauty.</h4>
+<h2>People have no time for a slow web.</h2>
+<h4>That means Speed, Page Ranking, Interaction and NextGen devices.</h4>
 
-<p>It's well known that beauty attracts attention. Less known is that websites need to be designed for speed. Or, they will be far less likely to show up in an organic search.</p>
-<p>Basically, its a combo of math and design.
-<p>Call us if you're having trouble attracting and keeping clients with your current Web design and system.</p>
+<p>It's well known that design attracts attention. Less known is that websites need to be designed for speed. For two reason. They won't easily show up in a search engine, and mobile devices have thinner bandwith. Moreover, websites need to be designed for the mobile's much smaller screens.</p>
+<p>Basically, its a combo of math and design.</p>
+<p>Call us if you need you are seeking to gain a market share on mobile screens.</p>
+<p><img src="/static/img/etc/NYT_Screen-1000x763rgb72dpi.jpg" alt="" width="400" /></p>
 
-<p><img src="/static/img/Loudspring/NYT_Screen-1000x763rgb72dpi.jpg" alt="" width="400" /></p>
 
 <!--
 <p>NewYork-Tokyo, known as NYT is a company that puts on monthly cultural events in New York, bringing the best of Japan to the West, whether fashion, film or robots.</p>

@@ -1,7 +1,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
-
-<script src="http://loudspring.com/wp-content/themes/twentyeleven/js/jquery.easing.1.3.js" type="text/javascript" charset="UTF-8"></script>
-<script src="http://loudspring.com/wp-content/themes/twentyeleven/js/jquery.vgrid.0.1.4-mod.js" type="text/javascript" charset="UTF-8"></script>
+<script src="/static/bin/jquery.easing.1.3.js" type="text/javascript" charset="UTF-8"></script>
+<script src="/static/bin/jquery.vgrid.0.1.4-mod.js" type="text/javascript" charset="UTF-8"></script>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -17,17 +16,19 @@ jQuery.noConflict();
 	$(function(){
 		
 		$('#header').css("visibility", "hidden");
+		
 		var setGrid = function () {
-			return $("#main").vgrid({
+			return $("#center").vgrid({
 				easeing: "easeOutQuint",
-				time: 50,
-				delay: 0,
-				selRefGrid: "#main post",
+				time: 100,
+				delay: 50,
+				selRefGrid: "#center post",
 				selFitWidth: ["#header", "#footer"],
-				forceAnim: 1			});
+				forceAnim: 1 });
 		};
 		
 		setTimeout(setGrid, 300);
+		
 		setTimeout(function() {
 			$('#header').hide().css("visibility", "visible").fadeIn(500);
 		}, 500);
@@ -35,7 +36,7 @@ jQuery.noConflict();
 		$(window).load(function(e){
 			setTimeout(function(){ 
 				// prevent flicker in grid area - see also style.css
-				$("#main").css("paddingTop", "0px");
+				$("#center").css("paddingTop", "0px");
 			}, 1000);
 		});
 

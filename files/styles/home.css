@@ -37,7 +37,8 @@ a {
 /*Centers in the middle with auto margin. Width was 800px */
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+/*  width: 900px; */
+  width: 85%;
 }
 
 /* Header conains blog brand */
@@ -51,7 +52,7 @@ a {
   font-family: 'Duru Sans', serif;
   font-weight: bold;
   font-size: 2em;
-  font-color: clear;
+  font-color: black;
   margin: 0px 0px 20px 0px;	
 }
 
@@ -59,10 +60,12 @@ a {
   display:none;
 }
 
+/*   background : url("/static/img/Loudspring/Loudspring_Banner_Vert_600x1050px.png") left no-repeat;	
+*/
 #blog-image {
-  background : url("/static/img/Loudspring/Loudspring_Banner_500x80px.png") left no-repeat;	
+  background : url("/static/img/Loudspring/Loudspring_Banner_500x80px.png") left no-repeat;
   width: 501;
-  height:81px;
+  height: 81px;
 }
 
 #blog-subtitle {
@@ -81,33 +84,33 @@ a {
 Float on top with relative position and z-index
 */
 #page-navigation {
-  clear:both;
+  clear: both;
   position: relative;
   top: -150px;
   text-align: center;
   z-index:999;
 }
     #page-navigation #prev {
-    	float:left;
-    	position:relative;
-    	left:-80px;
+    	float: left;
+    	position: relative;
+    	left: -80px;
     }
     #page-navigation #next {
-  		float:right;
-		position:relative;
-    	left:50px;
+  		float: right;
+		position: relative;
+    	left: 50px;
     }
 
 
 /* Post style */
 #home .post {
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   
   /* default if size missing */
 
   /* float the up to their neighbour */
-  float:left;
+  float: left;
   margin: 0px 10px 10px 0px;
   
   border: 1px solid black;
@@ -115,8 +118,20 @@ Float on top with relative position and z-index
   border-top-right-radius: 9px;
 }
 
+/* main area within header and footer */
+#center {
+	width: auto;
+}
+
+/* Display image (the content of this div) vertically centered */
+.post-image {
+  display: table-cell;
+  vertical-align:middle
+}	
+
+
 .post-image-alt {
-  display:none
+  display: none
 }
 
 .post-date {
@@ -142,6 +157,15 @@ Float on top with relative position and z-index
   color: black;
 }
 
+.post-tiny {
+	font-size: 11px;	
+	background: #D7D7D7;
+  	width: 100%;
+  	display: block;
+  	overflow: hidden;
+}
+
+
 .post-author {
   clear: both;
   font-size: 10px;
@@ -159,16 +183,19 @@ Float on top with relative position and z-index
 
 /* Push on bottom with clear */
 #footer {
-  clear:both;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  clear: both;
   text-align: center;
   margin: 10px 0 0 0;
-  font-size: 1.1 em;
+  font-size: 13px;
 }
-#footer ul li {
-   display: inline;
-   list-style: none;
-   margin:0 5px 0 5px;	
-}
+	#footer ul li {
+	   display: inline;
+	   list-style: none;
+	   margin:0 5px 0 5px;	
+	}
 
 #powered-by {
 }
@@ -180,20 +207,20 @@ Float on top with relative position and z-index
 
 /** Markdown *****************************************************************/
 
-::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
-::selection{background:rgba(255,255,0,0.3);color:#000}
+::-moz-selection{background: rgba(255,255,0,0.3); color:#000}
+::selection{background: rgba(255,255,0,0.3); color:#000}
 
-a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
-a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::-moz-selection{background: rgba(255,255,0,0.3); color:#0645ad}
+a::selection{background: rgba(255,255,0,0.3); color:#0645ad}
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight:normal;
-  color:#111;
-  line-height:1em;
+  font-weight: normal;
+  color: #111;
+  line-height: 1em;
 }
 h4, h5, h6 { font-weight: bold; }
 h1 { font-size: 2em;    }
@@ -327,19 +354,18 @@ td {
 
 /* Extra tidbits like greying out image
 */
-#home .post {
+#home .post, #blog-image {
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
 }
 
-#home .post:hover {
+#home .post:hover, #blog-image {
     filter: none;
     -webkit-filter: grayscale(0);
 }
 
 /* Debug remove */
-/*
   * { outline: 2px dotted red }
   * * { outline: 2px dotted green }
   * * * { outline: 2px dotted orange }
@@ -348,4 +374,3 @@ td {
   * * * * * * { outline: 1px solid green }
   * * * * * * * { outline: 1px solid orange }
   * * * * * * * * { outline: 1px solid blue }
-*/

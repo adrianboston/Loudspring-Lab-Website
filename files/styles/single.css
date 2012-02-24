@@ -17,6 +17,8 @@ body {
   outline: 1px solid black;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+  
+  overflow: hidden;
 }
 
 .post-title {
@@ -43,7 +45,7 @@ body {
 }
 
 .post-date, .post-author {
-	display:none;
+	display: none;
 }
 
 /* Clear the body on this single page */
@@ -51,9 +53,15 @@ body {
   clear: both;
 }
 
-
-
+/* The featured image, show it or not */
 .post-image {
 	display: none;
 }
 
+/* Float all images to the left on the single post page
+*/
+p img {
+	float: left;	
+	margin-top: 15px;
+	margin-right: 15px;
+}

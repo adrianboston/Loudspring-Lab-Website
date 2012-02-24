@@ -6,7 +6,7 @@
   % from lib.util import val
 
   % style = val(post.meta, 'style-single')
-  % if style:
+  % if style != None:
 	<link href="/static/styles/{{post.meta['style-single']}}" media="Screen" rel="stylesheet" type="text/css" />
   % else:
     <link href="/static/styles/single.css" media="Screen" rel="stylesheet" type="text/css" />
@@ -18,7 +18,7 @@
 
   % iscomment = val(post.meta,'comment')
   % imgfeat = val(post.meta,'image-feat')
-  % type = val(post.meta,'type')
+  % type = val(post.meta,'type', "post")
   
   % import random
   % pic = random.randint(0, 4)
@@ -43,7 +43,7 @@
   <div class="post-author">{{post.meta['author']}}</div>
   <div class="post-body">{{!post.contents}}</div>
   % if imgfeat:
-    <div class="post-image"><img src="/static/{{imgfeat}}"/></div>
+    <div class="post-image"><img src="{{imgfeat}}"/></div>
   % end  
 </div>
 
