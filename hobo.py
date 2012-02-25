@@ -56,7 +56,7 @@ USE_HEROKU = blog_config.USE_HEROKU \
 DISQUS_SHORTNAME = blog_config.DISQUS_SHORTNAME \
         if hasattr(blog_config, 'DISQUS_SHORTNAME') else ''
 USE_WSGI = blog_config.USE_WSGI \
-        if hasattr(blog_config, 'USE_WSGI') else False        
+        if hasattr(blog_config, 'USE_WSGI') else False 
 BLOGIMAGE = blog_config.BLOGIMAGE \
         if hasattr(blog_config, 'BLOGIMAGE') else ''        
 
@@ -204,11 +204,10 @@ def error404(code=None):
 # E X E C U T I O N ###########################################################
 
 process_blog_posts()
-if USE_WSGI:
-	os.chdir(os.path.dirname(__file__)) 
-	 
-elif USE_HEROKU:
+if USE_HEROKU:
 	run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
+elif USE_WSGI:
+	os.chdir(os.path.dirname(__file__)) 	 
 else:
 	run(host="localhost", port=8080)
 
