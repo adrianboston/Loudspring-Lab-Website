@@ -1,8 +1,0 @@
-<div id="header">
-<div id="blog-brand">
-<a href="/">
-<div id="blog-title">{{title}}</div>
-<div id="blog-image"></div>
-<div id="blog-title">{{subtitle}}</div>
-</a></div>
-</div>

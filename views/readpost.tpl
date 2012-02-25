@@ -40,7 +40,7 @@
 <div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
 <div class="content">
 % if imgfeat:
-	   <div class="blog-image"><img src="{{imgfeat}}" width="410px"/></div>
+	   <div class="blog-image"><img src="{{imgfeat}}" width="410px" /></div>
 %else:
 	<div id="blog-image"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
 %end

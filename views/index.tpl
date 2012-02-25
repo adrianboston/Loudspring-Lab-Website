@@ -11,7 +11,7 @@
 </head>
 
 % import random
-% r = str(random.randint(0, 4))
+% r = "3" # for now str(random.randint(0, 4))
 % rotpic = "/static/img/etc/Rotate_img_"+r + ".jpg" # Clearly only .jpgs
 
 
@@ -27,7 +27,7 @@
 <div id="branding">
 <div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
 <div class="content">
-<img src="{{rotpic}}" alt="{{rotpic}}" width="410px">
+<img src="{{rotpic}}" alt="{{rotpic}}" width="410px" height="370">
 </div>
 </div>
 </a>
@@ -45,6 +45,7 @@
   % rank = int(val(post.meta,'rank', "0"))
   
   % sizew = 200 if rank <= 1 else 410
+  % sizeh = 180 if rank == 0 or rank == 2 else 360
    
     <a href="{{post.locator}}">
    
