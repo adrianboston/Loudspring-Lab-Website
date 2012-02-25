@@ -45,7 +45,7 @@
   % rank = int(val(post.meta,'rank', "0"))
   
   % sizew = 200 if rank <= 1 else 410
-  % sizeh = 180 if rank == 0 or rank == 2 else 360
+  % sizeh = 180 if rank == 0 or rank == 2 else 500
    
     <a href="{{post.locator}}">
    
@@ -56,7 +56,7 @@
     
 	<!-- image -->
     %if imgfeat: 
-      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" /></div>
+      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px"  height="{{sizeh}}px"/></div>
     % end
     
     <div class="post-summary" >	<!-- summary -->
