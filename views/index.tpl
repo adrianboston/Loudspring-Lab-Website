@@ -11,9 +11,11 @@
 </head>
 
 % import random
-% pic = random.randint(0, 4)
+% r = str(random.randint(0, 4))
+% rotpic = "/static/img/etc/Rotate_img_"+r + ".jpg" # Clearly only .jpgs
 
-<body id="home" class="img-{{pic}}">
+
+<body id="home">
 <div id="body-wrapper">
 
 % from lib.util import *
@@ -21,7 +23,14 @@
 <div id="center">
 
 <!-- header -->
-% include header.tpl
+<a href="/">
+<div id="branding">
+<div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
+<div class="content">
+<img src="{{rotpic}}" alt="{{rotpic}}" width="410px">
+</div>
+</div>
+</a>
 <!-- header:end -->
 
 % for post in posts:

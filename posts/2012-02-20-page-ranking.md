@@ -7,8 +7,8 @@
 :rank 0
 
 <h2>People have no time for a slow web.</h2>
-<h4>That means Speed, Page Ranking, Interaction and NextGen devices.</h4>
+<h4>That means Speed, Page Ranking, Interaction and Next Gen devices.</h4>
 
-<p>It's well known that design attracts attention. Less known is that websites need to be designed for speed. For two reason. They won't easily show up in a search engine, and mobile devices have thinner bandwith. Moreover, websites need to be designed for the mobile's much smaller screens.</p>
-<p>Basically, its a combo of math and design.</p>
-<p>Call us if you need to gain a market share on digital media and mobile screens.</p>
+<p>It's well known that design attracts attention. Less known is that good design includes speed. For valid reason. They'll get low Page Ranking (PR) and won't readily show up in a search engine. And mobile devices have thinner bandwith.
+<p>Further, websites need to be designed for the Next Generation of much smaller screens found on iPhones, iPads, Notebooks and Android screens.</p>
+<p>Basically, its time to loudspring your website for mobile purposes.</p>
