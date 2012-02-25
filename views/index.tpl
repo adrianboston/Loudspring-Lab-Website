@@ -27,7 +27,7 @@
 <div id="branding">
 <div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" alt="our brand" width="410px"></div>
 <div class="content">
-<img src="{{static}}" alt="{{rotpic}}" width="410px" height="325">
+<img src="{{static}}" alt="{{rotpic}}" width="410px" height="325px">
 </div>
 </div>
 </a>
@@ -45,7 +45,7 @@
   % rank = int(val(post.meta,'rank', "0"))
   
   % sizew = 200 if rank <= 1 else 410
-  % sizeh = 180 if rank == 0 or rank == 2 else 500
+  % sizeh = 135 if rank == 0 or rank == 2 else 325
    
     <a href="{{post.locator}}">
    
@@ -56,7 +56,7 @@
     
 	<!-- image -->
     %if imgfeat: 
-      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" /></div>
+      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" height="{{sizeh}}px"/></div>
     % end
     
     <div class="post-summary" >	<!-- summary -->
@@ -100,7 +100,7 @@
 
 <!--
 <div id="page-navigation">
-<div id="prev">{{!'<a href="/'+(str(page-1))+'"><img src="/static/img/Loudspring/REV-icon.png" height="20px"/></a>' if has_prev else 'x'}}</div>
+<div id="prev">{{!'<a href="/'+(str(page-1))+'"><img src="/static/img/Loudspring/REV-icon.png" height="20px" /></a>' if has_prev else 'x'}}</div>
 <div id="next">{{!'<a href="/'+(str(page+1))+'"><img src="/static/img/Loudspring/FFWD-icon.png" height="20px"/></a>' if has_next else 'x'}}</div>
 </div>
 -->
