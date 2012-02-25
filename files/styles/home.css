@@ -19,12 +19,14 @@
 @import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
 
+/* Put a small padding on the top
+*/
 body {
 /*  font-family: 'Varela', sans-serif; */
   font-family: 'Varela', sans-serif;
   font-size: 8px;
   background: white;
-  padding: 0 0 30px 0;
+  padding: 0 0 30px 10px;
 }
 
 a {
@@ -39,38 +41,80 @@ a {
   margin-left: auto;
   margin-right: auto;
 /*  width: 900px; */
-  width: 85%;
+  width: 100%;
 }
 
-/* Header conains blog brand */
+/* Header conains blog brand NO MORE */
 #header {
-	margin: 0 0 40px 0;	
+	border: 1px solid black;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+	margin: 0 10px 10px 0;
+	float: left;
+	overflow:hidden;
+	height: 370px;
+	width: 200px;
 }
 
 /* Blog info
 */
-#blog-brand {
+#branding {
   font-family: 'Duru Sans', serif;
   font-weight: bold;
   font-size: 2em;
-  font-color: black;
-  margin: 0px 0px 20px 0px;	
-}
-
-#blog-title {
-  display:none;
-}
-
-/*   background : url("/static/img/Loudspring/Loudspring_Banner_Vert_600x1050px.png") left no-repeat;	
+  font-color: white;
+/*  background: url("/static/img/etc/F_Docbaty_2582877959_4339fc61cb_800x1050rgb72dpi80p.jpg") center no-repeat;
 */
-#blog-image {
-  background : url("/static/img/Loudspring/Loudspring_Banner_500x80px.png") left no-repeat;
-  width: 501;
-  height: 81px;
+  margin: 0 10px 10px 0;
+  border: 1px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  width: 410px;
+  height: 370px;
+  
+  overflow: hidden;
 }
 
-#blog-subtitle {
-		
+#branding .title, #branding .subtitle {
+	background-color: rgb(37,38,39);
+	height: 48px;
+}
+
+
+
+#smallbox {
+  margin: 0 10px 10px 0;
+  border: 1px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  width: 410px;
+  height: 180px;
+  background-color: rgb(37,38,39);
+  overflow: hidden;
+}
+
+#smallbox .title {
+  font-family: 'Duru Sans', sans-serif;
+  font-size: 1em;
+  color: black;
+  float: left;
+  min-height: 45px;
+  background: #D7D7D7;
+  width: 100%;
+  padding: 0 0 0 5px;
+  color: #748C8C;
+}
+ 
+#smallbox .subtitle {
+  font-family: 'Duru Sans', sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  color: white;
+  float: right;
+  width: 250px;
+  margin: 0px 20px 0 0;
+  padding: 0 0 5px 10px;
 }
 
 #blog-title a {
@@ -151,6 +195,7 @@ Float on top with relative position and z-index
   background: #D7D7D7;
   width: 100%;
   padding: 0 0 0 5px;
+  color: #748C8C;
 }
 
 /* Post title anchor is given the size of the enclosing div in code*/
@@ -199,6 +244,7 @@ Float on top with relative position and z-index
 	}
 
 #powered-by {
+	display: none;
 }
 
 .post-image-alt {
@@ -355,13 +401,13 @@ td {
 
 /* Extra tidbits like greying out image
 */
-#home .post, #blog-image {
+#home .post  {
     filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
     filter: gray; /* IE5+ */
     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
 }
 
-#home .post:hover, #blog-image {
+#home .post:hover  {
     filter: none;
     -webkit-filter: grayscale(0);
 }

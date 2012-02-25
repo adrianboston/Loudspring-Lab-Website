@@ -13,7 +13,8 @@
   % end 
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
-
+	
+	% include easing.tpl
 </head>
 
   % iscomment = val(post.meta,'comment')
@@ -29,26 +30,35 @@
     <body id="singlepost" class="img-{{pic}}">
   % end
 
-  <div id="body-wrapper">
+ <div id="body-wrapper">
 
-<!-- header -->
-%include header.tpl
-<!-- header:end -->
+<div id="center"> <!-- main -->
 
-<div id="main"> <!-- main -->
+<!-- BrandingBox -->
+<a href="/">
+<div id="branding">
+<div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
+<div class="content">
+% if imgfeat:
+	   <div class="blog-image"><img src="{{imgfeat}}" width="410px"/></div>
+%else:
+	<div id="blog-image"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
+%end
+</div>
+</div>
+</a>
+<!-- BrandingBox:end -->
+
 
 <div class="post">
   <div class="post-title">{{post.meta['title']}}</div>
   <div class="post-date">{{post.date.strftime('%B %d, %Y')}}</div>
   <div class="post-author">{{post.meta['author']}}</div>
   <div class="post-body">{{!post.contents}}</div>
-  % if imgfeat:
-    <div class="post-image"><img src="{{imgfeat}}"/></div>
-  % end  
 </div>
 
-</div> <!-- main:end -->
 
+</div> <!-- main:end -->
 
 % if iscomment and disqus_shortname:
 <div id="disqus_thread"></div>

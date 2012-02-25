@@ -53,10 +53,12 @@ SUMMARY_DELIMITER = blog_config.SUMMARY_DELIMITER \
         if hasattr(blog_config, 'SUMMARY_DELIMITER') else '~~'
 USE_HEROKU = blog_config.USE_HEROKU \
         if hasattr(blog_config, 'USE_HEROKU') else True
-USE_WSGI = blog_config.USE_WSGI \
-        if hasattr(blog_config, 'USE_WSGI') else False        
 DISQUS_SHORTNAME = blog_config.DISQUS_SHORTNAME \
         if hasattr(blog_config, 'DISQUS_SHORTNAME') else ''
+USE_WSGI = blog_config.USE_WSGI \
+        if hasattr(blog_config, 'USE_WSGI') else False        
+BLOGIMAGE = blog_config.BLOGIMAGE \
+        if hasattr(blog_config, 'BLOGIMAGE') else ''        
 
 
 # F U N C T I O N S ###########################################################

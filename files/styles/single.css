@@ -10,30 +10,47 @@ body {
   font-size: 1em;	
 }
 
-.post {
-  width: 90%;
-  margin: 30px 0; 
-  
-  outline: 1px solid black;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
-  
-  overflow: hidden;
+#branding {
+  min-height: 410px;
+  height: auto;
 }
 
-.post-title {
-  font-size: .9em;	
-  color: black;
-  float: right;
-  margin: 0px;
+/* Post style */
+.post {
+  position: relative;
+  overflow: hidden;
+
+  /* default if size missing */
+  width: 50%;
+  min-height: 410px;
+
+  /* float the up to their neighbour */
+  float: left;
+  margin: 0px 10px 10px 0px;
+  
+  border: 1px solid black;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
+
+
+.post-title {
+  font-family: 'Duru Sans', sans-serif;
+  font-size: 1em;
+  color: black;
+  float: left;
+  min-height: 3em;
+  background: #D7D7D7;
+  width: 100%;
+  color: #748C8C;
+}
+
 
 .post-body h2 {
   color: black;
   float: left;
   min-height: .8em;
   width: 100%;
-  padding: 0 0 0 0px;
 }
 
 .post-body h4 {
@@ -41,7 +58,6 @@ body {
   float: left;
   min-height: .9em;
   width: 100%;
-  padding: 0 0 0 0px;
 }
 
 .post-date, .post-author {
@@ -51,12 +67,11 @@ body {
 /* Clear the body on this single page */
 .post-body {
   clear: both;
+  padding: 0 0 0 5px;
+  font-size: 13px;
 }
 
-/* The featured image, show it or not */
-.post-image {
-	display: none;
-}
+
 
 /* Float all images to the left on the single post page
 */

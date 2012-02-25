@@ -3,10 +3,10 @@
 <head>
   <title>{{title}}</title>
 	<link href="/static/styles/home.css" media="Screen" rel="stylesheet" type="text/css" />
-	<link href="/static/styles/sizes.css" media="Screen" rel="stylesheet" type="text/css" />
-	
+	<link href="/static/styles/sizes.css" media="Screen" rel="stylesheet" type="text/css" />	
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
+	
     % include easing.tpl #include javascript for vgrid and easing
 </head>
 
@@ -16,79 +16,77 @@
 <body id="home" class="img-{{pic}}">
 <div id="body-wrapper">
 
-<!-- header -->
-%include header.tpl
-<!-- header:end -->
-
 % from lib.util import *
 
-<!-- Leave out menu
-<div id="menu">
-% for post in posts:
-  % type = val(post.meta,'type')
-  % if type == 'page':
-    <div class="page">
-      <div class="page-title"><a href="{{post.locator}}">{{post.meta['title']}}</a></div>
-    </div>
-   % end 
-% end
-</div>
--->
-
 <div id="center">
+
+<!-- header -->
+% include header.tpl
+<!-- header:end -->
 
 % for post in posts:
 
   % type = val(post.meta,'type')
   % if type == None or type == 'page': continue
-  
-  % # sizew = 200; sizeh = 180; backgrnd = "" #set defaults for size and background url if needed
-  
+    
   % imgfeat = val(post.meta,'image-feat')
   % imgalt = val(post.meta,'image-alt')
   % imgtag = switchon(imgfeat,"img", "nonimg")
   
   % rank = int(val(post.meta,'rank', "0"))
   
-  % sizew = 200 if rank <= 1 else 400
+  % sizew = 200 if rank <= 1 else 410
    
     <a href="{{post.locator}}">
    
     <div class="post rank-{{rank}} {{imgtag}}">	<!-- post -->
     
 	<!-- title -->
-    <div class="post-title">{{post.meta['title']}}</div>
-    <!-- stripped summary -->
+    <div class="post-title">{{post.meta['title']}}</div> <!-- title:end -->
     
 	<!-- image -->
     %if imgfeat: 
       <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" /></div>
-    % end    
+    % end
     
-	<!-- summary -->
-    <div class="post-summary" >
+    <div class="post-summary" >	<!-- summary -->
       {{!post.summary}}
       <div class="post-more-link">
         <a href="{{post.locator}}">...more</a>
       </div>
-    </div> <!-- post-summary:end -->
+    </div> 						<!-- post-summary:end -->
     
-    <!-- meta info -->
-    <div class="post-meta">
+    <div class="post-meta">  	<!-- meta info -->
       <div class="post-date">{{post.date.strftime('%B %d, %Y')}}</div>
       <div class="post-author">{{post.meta['author']}}</div>    	  
-    </div>
+    </div> 						<!-- meta info:end -->
     
-        <div class="post-tiny" >
-      % summ = remove_html_tags(post.summary)
-      {{summ}}
+      <div class="post-tiny" >
+        % summ = remove_html_tags(post.summary)
+        {{summ}}
         <a href="{{post.locator}}">>></a>
-    </div> <!-- post-summary:end -->
+      </div> <!-- post-summary:end -->
 
   </div><!-- post:end -->
 </a> <!-- anchor around post end -->
 % end
 
+<!-- header -->
+% include smallbox.tpl
+<!-- header:end -->
+
+
+
+<div id="news">
+% for post in posts:
+  % type = val(post.meta,'type')
+  % if type == 'news':
+    <div class="news">
+      <div class="page-title"><a href="{{post.locator}}">{{post.meta['title']}}</a></div>
+    </div>
+   % end
+% end
+</div>
 
 <!--
 <div id="page-navigation">
