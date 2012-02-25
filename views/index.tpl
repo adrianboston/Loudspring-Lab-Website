@@ -13,7 +13,7 @@
 % import random
 % r = "3" # for now str(random.randint(0, 4))
 % rotpic = "/static/img/etc/Rotate_img_"+r + ".jpg" # Clearly only .jpgs
-
+% static = "/static/img/etc/MarkOkrafka_BlueSurf_410x325pxrgb72dpi80p.jpg"
 
 <body id="home">
 <div id="body-wrapper">
@@ -25,9 +25,9 @@
 <!-- header -->
 <a href="/">
 <div id="branding">
-<div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410px"></div>
+<div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" alt="our brand" width="410px"></div>
 <div class="content">
-<img src="{{rotpic}}" alt="{{rotpic}}" width="410px" height="370">
+<img src="{{static}}" alt="{{rotpic}}" width="410px" height="325">
 </div>
 </div>
 </a>
@@ -56,7 +56,7 @@
     
 	<!-- image -->
     %if imgfeat: 
-      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px"  height="{{sizeh}}px"/></div>
+      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" /></div>
     % end
     
     <div class="post-summary" >	<!-- summary -->

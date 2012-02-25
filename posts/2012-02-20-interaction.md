@@ -1,6 +1,6 @@
 :title Social Media
 :author Adrian
-:image-feat /static/img/etc/MingleVerse-900x786rgb72dpi.jpg
+:image-feat /static/img/etc/MingleVerse-410x325rgb72dpi100p.jpg
 :style-single single.css
 :type post
 :rank 0

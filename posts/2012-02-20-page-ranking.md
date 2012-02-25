@@ -1,7 +1,7 @@
 :title Communication Design
 :author Adrian
-:image-feat /static/img/etc/F_TKKSummers_2888453574_81070b80bf_900x1165rgb400dpi80.jpg
-:image-alt &#169 TKK Summers
+:image-feat /static/img/etc/F_TKKSummers_2888453574_81070b80bf_410x325rgb72dpi80p.jpg
+:image-alt &#169; TKK Summers
 :style-single single.css
 :type post
 :rank 0

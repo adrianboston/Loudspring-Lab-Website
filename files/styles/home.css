@@ -78,7 +78,7 @@ a {
 
 #branding .title, #branding .subtitle {
 	background-color: rgb(37,38,39);
-	height: 48px;
+	height: 45px;
 }
 
 
@@ -191,7 +191,7 @@ Float on top with relative position and z-index
   font-size: 1em;
   color: black;
   float: left;
-  min-height: 3em;
+  min-height: 45px;
   background: #D7D7D7;
   width: 100%;
   padding: 0 0 0 5px;

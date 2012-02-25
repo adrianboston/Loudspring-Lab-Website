@@ -1,14 +1,14 @@
 :title Mobile Apps
 :author Adrian
-:image-feat /static/img/etc/F_SiemensPLM_5595549698_2cd48c69d7_800x1050rgb72dpi80p.jpg
-:image-alt &#169 Siemens PLM
+:image-feat /static/img/etc/F_SiemensPLM_5595549698_2cd48c69d7_410x325rgb72dpi80p.jpg
+:image-alt &#169; Siemens PLM
 :style-single single.css
 :type post
 :rank 3
 
 
 <h2>The App is the new Website.</h2>
-<h4>It can browsed anywhere, whether business or pleasure.</h4>
+<h4>It can browsed anywhere, whether for business or pleasure.</h4>
 
 <p>Our designers and developers have been there since the very beginning, when only 500 iPhone Apps existed on the iTunes Store. That's before the iPad.</p>
 
