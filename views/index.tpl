@@ -25,9 +25,9 @@
 <!-- header -->
 <a href="/">
 <div id="branding">
-<div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" alt="our brand" width="410px"></div>
+<div class="title"><img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" alt="our brand" width="410"></div>
 <div class="content">
-<img src="{{static}}" alt="{{rotpic}}" width="410px" height="325px">
+<img src="{{static}}" alt="{{rotpic}}" width="410" height="325">
 </div>
 </div>
 </a>
@@ -56,7 +56,7 @@
     
 	<!-- image -->
     %if imgfeat: 
-      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}px" height="{{sizeh}}px"/></div>
+      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}" height="{{sizeh}}"/></div>
     % end
     
     <div class="post-summary" >	<!-- summary -->
@@ -100,8 +100,8 @@
 
 <!--
 <div id="page-navigation">
-<div id="prev">{{!'<a href="/'+(str(page-1))+'"><img src="/static/img/Loudspring/REV-icon.png" height="20px" /></a>' if has_prev else 'x'}}</div>
-<div id="next">{{!'<a href="/'+(str(page+1))+'"><img src="/static/img/Loudspring/FFWD-icon.png" height="20px"/></a>' if has_next else 'x'}}</div>
+<div id="prev">{{!'<a href="/'+(str(page-1))+'"><img src="/static/img/Loudspring/REV-icon.png" height="20" /></a>' if has_prev else 'x'}}</div>
+<div id="next">{{!'<a href="/'+(str(page+1))+'"><img src="/static/img/Loudspring/FFWD-icon.png" height="20"/></a>' if has_next else 'x'}}</div>
 </div>
 -->
 

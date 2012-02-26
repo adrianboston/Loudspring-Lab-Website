@@ -16,3 +16,15 @@
 
 <p>For us, it's all about the user. We push the limits of technology to completely satisfy the end-user.</p>
 
+
+<p>
+<img src="/static/img/logos/etc/apple_logo-420x600rgb72dpi.png" width="100" height="" />
+<img src="/static/img/logos/google/google-mobile-app48x48rgb72dpi.png" width="48" height="48"/>
+<img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="241"/>
+</p>
+<p>
+<img src="/static/img/logos/etc/HUD_LeftTurtleBW_iPad-360x200rgb72dpi.png" width="90" height="50"/>
+<img src="/static/img/logos/etc/HUD_RightRabbitBW_iPad-360x200rgb72dpi.png" width="90" height="50"/>
+<img src="/static/img/logos/etc/Filterfish-Launch-iPad-Disc-Portrait-384x502rgb72dpi.png" width="170" height="240"/>
+</p>
+
