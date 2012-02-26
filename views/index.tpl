@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>{{title}}</title>
@@ -7,7 +7,12 @@
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
 	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
 	
-    % include easing.tpl #include javascript for vgrid and easing
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="/static/src/jquery.easing.1.3.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="/static/src/jquery.vgrid.0.1.4-mod.js" type="text/javascript" charset="UTF-8"></script>
+
+    <script src="/static/src/easing.js" type="text/javascript" charset="UTF-8" ></script> 
+    % # include easing.tpl #include javascript for vgrid and easing
 </head>
 
 % import random
@@ -16,7 +21,7 @@
 % static = "/static/img/etc/MarkOkrafka_BlueSurf_410x325pxrgb72dpi80p.jpg"
 
 <body id="home">
-<div id="body-wrapper">
+<div id="wrapper">
 
 % from lib.util import *
 
@@ -44,41 +49,46 @@
   
   % rank = int(val(post.meta,'rank', "0"))
   
+  % #sizew = 200 if rank <= 1 else 410
   % sizew = 200 if rank <= 1 else 410
-  % sizeh = 135 if rank == 0 or rank == 2 else 325
+  % sizeh = 134 if rank == 0 or rank == 2 else 325
+  % # sizeh = 135 if rank == 0 or rank == 2 else 327
    
-    <a href="{{post.locator}}">
+<!-- pput it else    <a href="{{post.locator}}"> -->
    
     <div class="post rank-{{rank}} {{imgtag}}">	<!-- post -->
     
 	<!-- title -->
-    <div class="post-title">{{post.meta['title']}}</div> <!-- title:end -->
+	<a href="{{post.locator}}"> 
+    <div class="title">{{post.meta['title']}}</div> <!-- title:end -->
+    </a>
     
 	<!-- image -->
     %if imgfeat: 
-      <div class="post-image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}" height="{{sizeh}}"/></div>
+      <div class="image"><img src="{{imgfeat}}" alt="{{imgalt}}" width="{{sizew}}" height="{{sizeh}}"/></div>
     % end
     
-    <div class="post-summary" >	<!-- summary -->
+    <div class="summary" >	<!-- summary -->
       {{!post.summary}}
-      <div class="post-more-link">
+      <div class="more-link">
         <a href="{{post.locator}}">...more</a>
       </div>
     </div> 						<!-- post-summary:end -->
     
-    <div class="post-meta">  	<!-- meta info -->
-      <div class="post-date">{{post.date.strftime('%B %d, %Y')}}</div>
-      <div class="post-author">{{post.meta['author']}}</div>    	  
+    <div class="meta">  	<!-- meta info -->
+      <div class="date">{{post.date.strftime('%B %d, %Y')}}</div>
+      <div class="author">{{post.meta['author']}}</div>    	  
     </div> 						<!-- meta info:end -->
     
-      <div class="post-tiny" >
+      <div class="tiny" >
         % summ = remove_html_tags(post.summary)
         {{summ}}
         <a href="{{post.locator}}">>></a>
       </div> <!-- post-summary:end -->
 
   </div><!-- post:end -->
-</a> <!-- anchor around post end -->
+<!-- </a> --> <!-- anchor around post end -->
+
 % end
 
 <!-- header -->

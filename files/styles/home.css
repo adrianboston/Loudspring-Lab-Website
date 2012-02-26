@@ -36,7 +36,7 @@ a {
 
 /* Major encompassing block
 */
-#body-wrapper {
+#wrapper {
 /*Centers in the middle with auto margin. Width was 800px */
   margin-left: auto;
   margin-right: auto;
@@ -44,7 +44,7 @@ a {
   width: 100%;
 }
 
-/* Header conains blog brand NO MORE */
+/* Header conains blog brand, but NO MORE */
 #header {
 	border: 1px solid black;
     border-top-left-radius: 9px;
@@ -53,8 +53,8 @@ a {
 	margin: 0 10px 10px 0;
 	float: left;
 	overflow:hidden;
-	height: 370px;
 	width: 200px;
+	height: 370px;	/* 370px? */
 }
 
 /* Blog info
@@ -70,8 +70,8 @@ a {
   border: 1px solid black;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  width: 410px;
-  height: 370px;
+  width: 410px;	/* not 410 or 412 */
+  height: 370px; /* not 370 03 372*/
   
   overflow: hidden;
 }
@@ -101,6 +101,9 @@ a {
   float: left;
   min-height: 45px;
   background: #D7D7D7;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+
   width: 100%;
   padding: 0 0 0 5px;
   color: #748C8C;
@@ -152,11 +155,16 @@ Float on top with relative position and z-index
   position: relative;
   overflow: hidden;
   
+  background: #D7D7D7;
+
+  
   /* default if size missing */
 
   /* float the up to their neighbour */
   float: left;
-  margin: 0px 10px 10px 0px;
+/*  margin: 0px 10px 10px 0px; */
+  
+  padding: 0px;//1px 1px 1px 1px;
   
   border: 1px solid black;
   border-top-left-radius: 9px;
@@ -169,41 +177,42 @@ Float on top with relative position and z-index
 }
 
 /* Display image (the content of this div) vertically centered */
-.post-image {
+.post .image {
   display: table-cell;
   vertical-align:middle
 }	
 
-
-.post-image-alt {
+.post .image-alt {
   display: none
 }
 
-.post-date {
+.post .date {
   text-align: right;
   font-size: 10px;
   float: right;
   margin: 10px 0px 0px 0px;
 }
 
-.post-title {
+.post .title {
   font-family: 'Duru Sans', sans-serif;
   font-size: 1em;
   color: black;
   float: left;
-  min-height: 45px;
-  background: #D7D7D7;
+  height: 45px;
+  
   width: 100%;
-  padding: 0 0 0 5px;
   color: #748C8C;
+  /* margin will push it down. dont */  
+  padding: 0px 0 0 9px;
+  overflow: hidden;
 }
 
 /* Post title anchor is given the size of the enclosing div in code*/
-.post-title a {
+.post .title a {
   color: black;
 }
 
-.post-tiny {
+.post .tiny {
 	font-size: 11px;	
 	background: #D7D7D7;
   	width: 100%;
@@ -211,18 +220,17 @@ Float on top with relative position and z-index
   	overflow: hidden;
 }
 
-
-.post-author {
+.post .author {
   clear: both;
   font-size: 10px;
   color: #808080;
 }
 
-.post-summary, .post-meta {
-	display: none;	
+.post .summary, .post .meta {
+/*	display: none;	*/
 }
 
-.post-summary {
+.post .summary {
   clear: both;
   margin: 5px 0px 30px 0px;
 }
@@ -247,7 +255,7 @@ Float on top with relative position and z-index
 	display: none;
 }
 
-.post-image-alt {
+.post .image-alt {
 	display: none;	
 }
 

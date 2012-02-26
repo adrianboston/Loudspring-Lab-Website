@@ -20,30 +20,33 @@
 }
 */
 
+/* The following size needs 412 w x 327 h (change graphics)
+ OR use 199 x 179 for smaller  */
+ 
+/* Images are 45 px smaller in height, but same in width */
+
 /* Sizes for home */
 #home .rank-0 {
-  width: 200px;
-  height: 180px;	
+  width: 199px;
+  height: 179px;	
   margin: 0px 10px 10px 0px;
-
 }
 
 #home .rank-1 {
-  width: 200px;
-  height: 370px;	
+  width: 199px;
+  height: 370px;	/* 370px? */	
   margin: 0px 10px 10px 0px;
-
 }
 
 #home .rank-2 {
   width: 410px;
-  height: 180px;
+  height: 179px;
   margin: 0px 10px 10px 0px;	
 }
 
 #home .rank-3 {
   width: 410px;
-  height: 370px;
+  height: 370px;	/* 370px? */
   margin: 0px 10px 10px 0px;	
 }
 
