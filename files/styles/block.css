@@ -88,8 +88,8 @@ Possibly overridden in home or single css
 }
 
 #about-box .header {
-	background-color: rgb(37,38,39);
 	background: url('/static/img/decor/headerdark2-10x45rgb72dpi.png') repeat-x;
+	color: #D7D7D7;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 }
