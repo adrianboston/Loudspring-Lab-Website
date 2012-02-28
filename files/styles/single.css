@@ -12,8 +12,10 @@
 	min-height: 370px;	/* 370px? */
 	margin: 0px 10px 10px 0px;			
 }
-	.rank-post div.content {
-		margin: 2px 0 0 6px;
+	.rank-post .contents {
+		margin: 5px 10px 0 5px;
+		width: auto;
+		text-align:justify;
 	}
 
 .rank-mini {
@@ -21,8 +23,8 @@
   min-height: 89px;
   margin: 0px 10px 10px 0px;				
 }
-	.rank-mini .contents {
-		margin: 22px auto;
+	.rank-mini .contents {		
+		margin: 22px 20px ;
 		align: center;
 	}
 	

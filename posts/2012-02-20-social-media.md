@@ -14,6 +14,7 @@
 
 <p>MingleVerse is one example. MingleVerse offers a way for distanced people to co-mingle in one shared space. MingleVerse and a pair of headphones turn your virtual reality into an understandable experience. Without it, you would never know who is speaking. Because of that technology, MingleVerse offered a usable space for upto 50 people.</p>
 
-<img src="/static/img/logos/polaroid-icon/all.png" width="590" height="197"/>
+<img src="/static/img/logos/polaroid-icon/all-1.png" />
+<img src="/static/img/logos/polaroid-icon/all-2.png" />
 <img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="240"/>
 <img src="/static/img/logos/heroku/heroku-logo-light-234x60.png" width="234" height="60"/>
