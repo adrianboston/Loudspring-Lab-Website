@@ -16,7 +16,7 @@ jQuery.noConflict();
 				easeing: "easeOutQuint",
 				time: 100,
 				delay: 50,
-				selRefGrid: "#center post",
+				selRefGrid: "#center blox",
 				selFitWidth: ["#header", "#footer"],
 				forceAnim: 1 });
 		};

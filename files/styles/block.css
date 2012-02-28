@@ -1,0 +1,109 @@
+/* 
+Styles for the enclosing block object. That could be any subdividible section
+Possibly overridden in home or single css
+*/
+
+.blox {
+  overflow: hidden;
+  background: white;
+  
+  float: left;  /* always float the up to their neighbour */
+  
+  margin: 0px 10px 10px 0px;
+  padding: 0px;
+    
+  border: 1px solid black; /* A radius on the top */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* Any anchor is a block, uhm no */
+.blox a {
+}
+
+.blox .header {
+	font-family: 'Duru Sans', sans-serif;
+	float: left;
+	height: 45px;
+	
+	width: 100%;
+	color: #748C8C;
+	overflow: hidden;
+	
+	background: #D7D7D7;
+	background: url('/static/img/decor/headershaded2-10x45rgb72dpi.png') repeat-x;
+}
+
+	.blox .title {
+		font-size: 11pt;
+		margin: 9px 0 0 9px;
+	}
+
+	.blox .subtitle {
+		font-size: 10pt;
+		display: none;
+	}
+
+.blox .content {
+	font-size: 10pt;
+	background: white;
+	float: left;
+}
+	.blox .summary {
+		display: none;
+	}
+	
+	.blox .image {		
+	}	
+
+	.blox .tiny {
+		font-size: 11px;	
+		background: #D7D7D7;
+	  	width: 100%;
+	  	display: block;
+	  	overflow: hidden;
+	}
+	
+.blox .footer {
+	display: none;	
+	float: left;	
+}
+	.blox .author {
+		clear: both;
+		font-size: 10px;
+		color: #808080;
+	}
+	.blox .date {
+		 text-align: right;
+		 font-size: 10px;
+		 float: right;
+		 margin: 10px 0px 0px 0px;
+	}
+
+/* Specifics for about and header box
+*/
+#about-box .content {
+	float: right;
+	margin: 2pt 30pt 0 0;
+}
+
+#about-box .header {
+	background-color: rgb(37,38,39);
+	background: url('/static/img/decor/headerdark2-10x45rgb72dpi.png') repeat-x;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+#branding .header {
+	background: url('/static/img/decor/headerdark2-10x45rgb72dpi.png') repeat-x;
+	overflow: hidden;
+	
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+}
+
+	#branding .title {
+		margin: 0px 0 0 0px; /* Return this to normal */
+	}
+
+
