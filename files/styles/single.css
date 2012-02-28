@@ -27,12 +27,9 @@
 		margin: 22px 20px ;
 		align: center;
 	}
-	
-
 
 /* Float all images on the single post page
 */
 p img {
-    margin-right: 9px;
-    margin-top: 9px;
+	margin: 2px;
 }

@@ -12,16 +12,15 @@
 
 <p>Our designers and developers have been there since the very beginning, when only 500 iPhone Apps existed on the iTunes Store. That's before the iPad.</p>
 
-<p>Since that time, we've been pressing the limits of iPhone with OpenGL graphics, sound and visualization. We are strong in U/X design, Objective-C, Cocoa, Carbon, OpenGL, Sound generation, OpenGL and animation. We can help you develop unique corporate App or even author interactive books.</p>
+<p>Since that time, we've been pressing the limits of iPhone with technology and user interaction. We are strong in U/X design, Objective-C, Cocoa, Carbon, OpenGL, Sound, OpenGL and animation. We can help you develop unique corporate App or even author interactive books.</p>
 
 <p>For us, it's all about the user. We push the limits of technology to completely satisfy him or her.</p>
 
 <p>
-
 <img src="/static/img/logos/etc/apple_logo-420x600rgb72dpi.png" width="100" />
 <img src="/static/img/logos/etc/android_logo_500x500rgb72dpi.png" width="125" height="125" />
 <img src="/static/img/logos/etc/apple_ibooks_351x446rgb72dpi.jpg" width="125" />
-<img src="/static/img/logos/etc/xcode_logo_244x180rgb72dpi.png" width="125" height="125" />
+<img src="/static/img/logos/etc/xcode_icon_512x512rgb72dpi.png" width="180" height="180" />
 <img src="/static/img/logos/google/google-mobile-app48x48rgb72dpi.png" width="48" height="48"/>
 <img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="241"/>
 <img src="/static/img/logos/etc/HUD_LeftTurtleBW_iPad-360x200rgb72dpi.png" width="90" height="50"/>
