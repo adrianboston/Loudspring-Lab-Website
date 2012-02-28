@@ -9,13 +9,30 @@
 <h2>We build products that build strong Social Networks.</h2>
 <h4>That mean social integration with your Web or Mobile platforms.</h4>
 
-<p>Engaging consumers in an genuine two-way relationship is today's marketing mantra. It's not like the days of push advertising. You can't go viral without an enthusiastic public. And, that means a constant level of interaction with your potential customers.</p>
+<p>It's not like the days of push advertising. You can't go viral without an enthusiastic public. And, that means a two-way level of interaction with your potential customers.</p>
 
-<p>It's the reason we develop Facebook, Twitter, Foursquare, LinkedIn, Tumblr, Google+ and dozens of other Social Networks Apps using their native API. That integrates not only systems, but people.</p>
+<p>It's the reason we develop Facebook, Twitter, Foursquare, LinkedIn, Tumblr, Google+ and dozens of other Social Networks Apps using their native API.</p>
 
-<p>MingleVerse is one example. MingleVerse offers a way for distanced people to co-mingle in one shared space. MingleVerse and a pair of headphones turn your virtual reality into an understandable experience. Without it, you would never know who is speaking. Because of that technology, MingleVerse offered a usable space for upto 50 people.</p>
+<p>We know social networks, having joined Six-degrees in 1996, and developed corporate ones since 1999. MingleVerse is a recent example. MingleVerse and a pair of headphones turn your virtual reality into an understandable experience. Without it, you would never know who is speaking in a social setting.</p>
 
-<img src="/static/img/logos/polaroid-icon/all-1.png" />
-<img src="/static/img/logos/polaroid-icon/all-2.png" />
+<p>With our experience, we can help you integrate not only systems, but people. And that's on both web and mobile platforms.</p>
+
+<img src="/static/img/logos/polaroid-icon/delicious.png" />
+<img src="/static/img/logos/polaroid-icon/digg.png" />
+<img src="/static/img/logos/polaroid-icon/facebook.png" />
+<img src="/static/img/logos/polaroid-icon/feedburner.png" />
+<img src="/static/img/logos/polaroid-icon/flickr.png" />
+<img src="/static/img/logos/polaroid-icon/gmail.png" />
+<img src="/static/img/logos/polaroid-icon/lastfm.png" />
+<img src="/static/img/logos/polaroid-icon/linkedin.png" />
+<img src="/static/img/logos/polaroid-icon/myspace.png" />
+<img src="/static/img/logos/polaroid-icon/reddit.png" />
+<img src="/static/img/logos/polaroid-icon/rss.ong" />
+<img src="/static/img/logos/polaroid-icon/skype.png" />
+<img src="/static/img/logos/polaroid-icon/stumbleupon.ong" />
+<img src="/static/img/logos/polaroid-icon/twitter.png" />
+<img src="/static/img/logos/polaroid-icon/yahoo.png" />
+<img src="/static/img/logos/polaroid-icon/youtube.png" />
+
 <img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="240"/>
 <img src="/static/img/logos/heroku/heroku-logo-light-234x60.png" width="234" height="60"/>

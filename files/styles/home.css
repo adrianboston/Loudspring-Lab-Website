@@ -17,7 +17,11 @@ body {
   font-family: 'Varela', sans-serif;
   font-size: 8px;
   padding: 0 0 30px 10px;
-  background:url("/static/img/decor/small-x-bg-8x8rgb72dpi.png") repeat;
+  
+//  background:url('/static/img/decor/small-x-bg-8x8rgb72dpi.png') repeat; 
+//  background:url('/static/img/decor/Small_Ripples_graphite_grey.png') repeat;
+  //background:url('/static/img/decor/small-x-graphite-8x8rgb72dpi.png') repeat;  
+  background:url('/static/img/decor/small-x-graphite40-8x8rgb72dpi.png') repeat;  
 }
 
 

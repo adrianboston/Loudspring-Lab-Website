@@ -12,7 +12,7 @@ Possibly overridden in home or single css
   margin: 0px 10px 10px 0px;
   padding: 0px;
     
-  border: 1px solid black; /* A radius on the top */
+  border: 1px solid grey; /* A radius on the top */
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
