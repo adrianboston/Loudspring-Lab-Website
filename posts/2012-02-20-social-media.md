@@ -1,6 +1,7 @@
 :title Social Media
 :author Adrian
 :image-feat /static/img/etc/MingleVerse-410x325rgb72dpi100p.jpg
+:image-title &#169; MingleVerse
 :style-single single.css
 :type post
 :rank 0

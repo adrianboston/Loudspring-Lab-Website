@@ -1,7 +1,7 @@
 :title Mobile Apps
 :author Adrian
 :image-feat /static/img/etc/F_SiemensPLM_5595549698_2cd48c69d7_410x325rgb72dpi80p.jpg
-:image-alt &#169; Siemens PLM
+:image-title &#169; Siemens PLM Software, Creative Commons
 :style-single single.css
 :type post
 :rank 3

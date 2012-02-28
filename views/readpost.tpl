@@ -17,8 +17,10 @@
 	% include easing.tpl
 </head>
 
-	% imgfeat = val(post.meta,'image-feat')
 	% type = val(post.meta,'type', "post")
+
+	% imgfeat = val(post.meta,'image-feat')
+	% imgtitle = val(post.meta, 'image-title', imgfeat)
 	
 	% import random
 	% pic = random.randint(0, 4)
@@ -42,9 +44,9 @@
 			</div>
 			<div class="content">
 			% if imgfeat:
-				<div class="image"><img src="{{imgfeat}}" alt="{{imgfeat}}" width="410" height="325"></div>
+				<div class="image"><img src="{{imgfeat}}" title="{{!imgtitle}}" width="410" height="325"></div>
 			%else:
-				<div id="image"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" alt="our brand" width="410"></div>
+				<div id="image"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" title="our brand" width="410"></div>
 			%end
 			</div>
 	</a>

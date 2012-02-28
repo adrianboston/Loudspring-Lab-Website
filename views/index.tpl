@@ -30,7 +30,7 @@
 				<img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" alt="our brand" width="410"></div>
 		</div>
 		<div class="content">
-			<div class="image"><img src="{{static}}" alt="{{rotpic}}" width="410" height="325"></div>
+			<div class="image"><img src="{{static}}" title="&#169; MarkOkrafka.com" width="410" height="325"></div>
 		</div>
 </a>
 </div>
@@ -46,7 +46,8 @@
 	% author = val(post.meta, 'author')
 	  
 	% imgfeat = val(post.meta,'image-feat')
-	% imgalt = val(post.meta,'image-alt')
+	% imgtitle = val(post.meta, 'image-title', imgfeat)
+
 	% imgtag = switchon(imgfeat,"img", "nonimg")
 	
 	% rank = int(val(post.meta,'rank', "0"))
@@ -71,7 +72,7 @@
 	<div class="content">    
 		<!-- image -->
 	    %if imgfeat: 
-		   	<div class="image"><img src="{{imgfeat}}" title="{{imgalt}}" width="{{sizew}}" height="{{sizeh}}"/></div>
+		   	<div class="image"><img src="{{imgfeat}}" title="{{!imgtitle}}" width="{{sizew}}" height="{{sizeh}}"/></div>
 	    % end
 	    
 	    <div class="summary" >	<!-- summary -->

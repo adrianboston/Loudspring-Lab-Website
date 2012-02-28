@@ -5,7 +5,7 @@ SUBTITLE = "Make everyday a loudspring"
 AUTHOR = "Loudspring"
 BLOGIMAGE = "/static/img/Loudspring/Loudspring_Banner_Vert_600x1050px.png"
 
-METADATA_TAGS = ['title', 'subtitle', 'author', 'image-feat', 'image-alt', 'style-single', 'is_page', 'type', 'rank', 'blox']
+METADATA_TAGS = ['title', 'subtitle', 'author', 'image-feat', 'image-title', 'style-single', 'is_page', 'type', 'rank', 'blox']
 
 # POSTS_PER_PAGE
 # The number of posts that will appear on each page of index.html

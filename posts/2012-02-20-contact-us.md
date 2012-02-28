@@ -1,7 +1,7 @@
 :title Contact Us
 :author Adrian
 :image-feat /static/img/etc/601Broadway_Map.jpg
-:image-alt &#169 Google
+:image-title &#169 Google
 :style-single page.css
 :type page
 
