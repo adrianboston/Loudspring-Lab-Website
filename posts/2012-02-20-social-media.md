@@ -4,10 +4,12 @@
 :image-title &#169; MingleVerse
 :style-single single.css
 :type post
-:rank 0
+:size small
+:smallblox small,<a href="http://www.mingleverse.com"><img src="/static/img/etc/webapp_mingleversevideo_410x370rgb72dpi.jpg"/></a>;small,<a href="https://mingleverse.com/account/pricing/"/><img src="/static/img/etc/webapp_mingleverseprice_410x370rgb72dpi.jpg"/></a>;small,<a href="http://www.kukarma.com/"><img src="/static/img/etc/webapp_kukarma_410x370rgb72dpi.jpg"/>
+
 
 <h2>We build products that build strong Social Networks.</h2>
-<h4>That mean social integration with your Web or Mobile platforms.</h4>
+<h4>That means social integration with your Web or Mobile platforms.</h4>
 
 <p>It's not like the days of push advertising. You can't go viral without an enthusiastic public. And, that means a two-way level of interaction with your potential customers.</p>
 

@@ -4,7 +4,9 @@
 :image-title &#169; Siemens PLM Software, Creative Commons
 :style-single single.css
 :type post
-:rank 3
+:size big
+:smallblox small,<img src="/static/img/etc/mobapp_ffish_en_200x370rgb72dpi.png"/>;tall,<img src="/static/img/etc/mobapp_ffish_jap_200x370rgb72dpi.png"/>;small,<img src="/static/img/etc/mobapp_ffish_itunes_410x370rgb72dpi.jpg"/>;large,<a href="http://www.148apps.com/news/filter-fish-physics-based-address-book/"><img src="/static/img/etc/mobapp_ffish_148apps_410x370rgb72dpi.jpg"/></a>
+
 
 
 <h2>The App is the new Website.</h2>
@@ -22,8 +24,5 @@
 <img src="/static/img/logos/etc/xcode_icon_512x512rgb72dpi.png" width="100" height="100" />
 <img src="/static/img/logos/google/google-mobile-app48x48rgb72dpi.png" width="48" height="48"/>
 <img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="241"/>
-<img src="/static/img/logos/etc/HUD_LeftTurtleBW_iPad-360x200rgb72dpi.png" width="90" height="50"/>
-<img src="/static/img/logos/etc/HUD_RightRabbitBW_iPad-360x200rgb72dpi.png" width="90" height="50"/>
-<img src="/static/img/logos/etc/Filterfish-Launch-iPad-Disc-Portrait-384x502rgb72dpi.png" width="85" height="120"/>
 
 

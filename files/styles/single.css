@@ -5,27 +5,6 @@
  
 @import url("home.css");
 
-.rank-post {
-	min-width: 410px;
-	max-width: 820px;
-	width: 50%;
-	min-height: 370px;	/* 370px? */
-}
-	.rank-post .contents {
-		margin: 5px 10px 0 5px;
-		width: auto;
-		text-align:justify;
-	}
-
-.rank-mini {
-  min-width: 89px;
-  min-height: 89px;
-  margin: 0px 10px 10px 0px;				
-}
-	.rank-mini .contents {		
-		margin: 22px 20px ;
-		align: center;
-	}
 
 /* Float all images on the single post page
 */

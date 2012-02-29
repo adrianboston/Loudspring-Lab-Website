@@ -5,11 +5,12 @@
 
 @import url(http://fonts.googleapis.com/css?family=Duru+Sans);
 @import url(http://fonts.googleapis.com/css?family=Varela);
-@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+/*@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+*/
 
 @import url("markdown.css");
-@import url("block.css");
-@import url("sizes.css");
+@import url("square_blox.css");
+/* @import url("sizes.css"); */
 
 /* Put a small padding on the top
 */
@@ -18,10 +19,7 @@ body {
   font-size: 8px;
   padding: 0 0 30px 10px;
   
-//  background:url('/static/img/decor/small-x-bg-8x8rgb72dpi.png') repeat; 
-//  background:url('/static/img/decor/Small_Ripples_graphite_grey.png') repeat;
-  //background:url('/static/img/decor/small-x-graphite-8x8rgb72dpi.png') repeat;  
-  background:url('/static/img/decor/small-x-graphite40-8x8rgb72dpi.png') repeat;  
+  background:url('/static/img/decor/small-x-graphite40-8x8rgb72dpi.png') repeat;   
 }
 
 

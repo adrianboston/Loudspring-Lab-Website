@@ -23,7 +23,7 @@
 <div id="center">
 
 <!-- branding -->
-<div id="branding" class="blox rank-3">
+<div id="branding" class="blox size-big dark">
 	<a href="/">
 		<div class="header">
 			<div class="title">
@@ -35,6 +35,8 @@
 </a>
 </div>
 <!-- branding:end -->
+
+% bloxsizes = {'small':0, 'wide':1, 'tall':2, 'big':3}
 
 % for post in posts:
 
@@ -50,14 +52,14 @@
 
 	% imgtag = switchon(imgfeat,"img", "nonimg")
 	
-	% rank = int(val(post.meta,'rank', "0"))
+	% size = val(post.meta,'size', "small")
+	% rank = 0
+	% if size in bloxsizes: rank = bloxsizes[size]
 	
-	% #sizew = 200 if rank <= 1 else 410
 	% sizew = 200 if rank <= 1 else 410
 	% sizeh = 134 if rank == 0 or rank == 2 else 325
-	% # sizeh = 135 if rank == 0 or rank == 2 else 327
      
-    <div class="blox rank-{{rank}}">
+    <div class="blox size-{{size}}">
     
 	<a href="{{post.locator}}">
    
@@ -72,7 +74,7 @@
 	<div class="content">    
 		<!-- image -->
 	    %if imgfeat: 
-		   	<div class="image"><img src="{{imgfeat}}" title="{{!imgtitle}}" width="{{sizew}}" height="{{sizeh}}"/></div>
+		   	<div class="image"><img src="{{imgfeat}}" title="{{imgtitle}}" width="{{sizew}}" height="{{sizeh}}"/></div>
 	    % end
 	    
 	    <div class="summary" >	<!-- summary -->

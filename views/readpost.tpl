@@ -36,7 +36,7 @@
 	<div id="center"> <!-- main -->
 
 	<!-- branding -->
-	<div id="branding" class="blox rank-3">
+	<div id="branding" class="blox rank-big dark">
 		<a href="/">
 			<div class="header">
 				<div class="title">
@@ -57,7 +57,7 @@
 	% title = val(post.meta,'title')
 	% author = val(post.meta, 'author')
 
-	<div id="post" class="blox rank-post">
+	<div id="post" class="blox size-full">
 		<div class="header">
 		   <div class="title">{{title}}</div> <!-- title:end -->
 		   <div class="subtitle">{{subtitle}}</div> <!-- title:end -->
@@ -73,16 +73,16 @@
 	    </div>
 	</div> <!-- blox:end -->
 
-	% blox = val(post.meta, 'blox')
-	% if blox:
-		% bloxlst = blox.split(';')	#splitup csv into list
-		% for b in bloxlst:
+	% smallblox = val(post.meta, 'smallblox')
+	% if smallblox:
+		% smallbloxes = smallblox.split(';')	#splitup csv into list
+		% for b in smallbloxes:
 			% kv = b.split(',')	#splitup csv into tupl
-			% k = kv[0].split(':')
-			% c = kv[1].split(':')
-			<div id="etc" class="blox rank-{{k[1]}}">
+			% size = kv[0] #.split('=', 1)
+			% content = kv[1] #.split('=', 1)
+			<div class="blox smallblox size-{{size}}">
 				<div class="content">
-				  <div class="contents">{{!c[1]}}</div>
+				  <div class="contents">{{!content}}</div>
 				</div>
 			</div>
 		% end

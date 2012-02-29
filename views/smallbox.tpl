@@ -1,5 +1,4 @@
-<div class="bloxs">
-<div id="about-box" class="blox rank-2">
+<div id="about-box" class="blox size-wide dark info">
 	<a href="/2012/02/20/about-us">
 	<div class="header">
 		<div class="title">About Us</div>
@@ -16,5 +15,4 @@
 		<a href="http://twitter.com/loudspringd">on twitter</a>.<br/>
 		</div>
 	</div>
-</div>
 </div>

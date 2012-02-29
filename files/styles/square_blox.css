@@ -1,0 +1,177 @@
+/* 
+Styles for the enclosing block object. That could be any subdividible section
+Possibly overridden in home or single css
+*/
+
+/* currently not in use
+.bloxs {
+	margin: 0px 10px 0px 0px;
+	padding: 0px 0px 10px 0px;
+//	background: url('/static/img/decor/footer_shadow6_10x5rgb72dpi.png') bottom repeat-x;
+}
+*/
+
+.blox {
+	overflow: hidden;
+	
+	float: left;  			/* always float the up to their neighbour */	
+	border: 1px solid grey; /* A radius on the top */
+	background: white;
+	
+	margin: 0 10px 10px 0;
+	border-radius: 3px;
+  
+	/* CSS3 inset shadow:  NO
+	box-shadow: 0px 0px 2px grey;
+	-moz-box-shadow: 0px 0px 2px grey;
+	-webkit-box-shadow: 0px 0px 2px grey;
+	*/
+}
+
+/* Any anchor is a block, uhm no */
+.blox a {
+}
+
+.blox .header {
+	font-family: 'Duru Sans', sans-serif;
+	float: left;
+	height: 45px;
+	
+	width: 100%;
+	color: #748C8C;
+	overflow: hidden;
+	
+	background: #D7D7D7;
+//	background: url('/static/img/decor/header_greynosh_10x45rgb72dpi.png') top repeat-x;
+
+}
+
+	.blox .title {
+		font-size: 11pt;
+		margin: 9px 0 0 9px;
+	}
+
+	.blox .subtitle {
+		font-size: 10pt;
+		display: none;
+	}
+
+.blox .content {
+	font-size: 10pt;
+	width: 100%;
+	height: 100%;
+	clear: both;
+	float: left;
+	background: white;
+	overflow: hidden:
+}
+	.blox .contents {
+		height: 100%;
+			
+	}
+	
+	.blox .summary {
+		height: 100%;
+		display: none;
+	}
+	
+	.blox .image {		
+		height: 100%;
+	}	
+
+	.blox .tiny {
+		font-size: 11px;	
+		background: #D7D7D7;
+	  	width: 100%;
+	  	display: block;
+	  	overflow: hidden;
+	}
+	
+.blox .footer {
+	width: 100%;
+	clear: both;
+	float: left;
+	display: none;
+}
+	.blox .author {
+		clear: both;
+		font-size: 10px;
+		color: #808080;
+	}
+	.blox .date {
+		 text-align: right;
+		 font-size: 10px;
+		 float: right;
+		 margin: 10px 0px 0px 0px;
+	}
+
+
+.blox.size-small {
+  width: 199px;
+  height: 179px;	
+}
+
+.blox.size-tall {
+  width: 199px;
+  height: 370px;	/* 370px? */	
+}
+
+.blox.size-wide {
+  width: 410px;
+  height: 179px;
+}
+
+.blox.size-big, blox.size-large {
+	width: 410px;
+	height: 370px;	/* 370px? */
+}
+
+
+.size-full {
+	min-width: 410px;
+	max-width: 820px;
+	width: 50%;
+	min-height: 370px;	/* 370px? */
+}
+	.size-full .contents {
+		margin: 5px 10px 0 5px;
+		width: auto;
+		text-align:justify;
+	}
+
+.size-mini {
+  min-width: 89px;
+  min-height: 89px;
+  margin: 0px 10px 10px 0px;				
+}
+	.size-mini .contents {		
+		margin: 22px 20px ;
+		align: center;
+	}
+
+
+/* Specifics for info and branding box
+*/
+.blox.info .contents {
+	float: right;
+	margin: 5px 10px 0 0;
+	height: 100%;
+}
+
+.blox.dark .header {
+//	background: url('/static/img/decor/headerdark2-10x45rgb72dpi.png') repeat-x;
+	background: rgb(37,38,39);
+	color: #D7D7D7;
+}
+
+
+#branding .title {
+	margin: 0px 0 0 0px; /* Return this to normal */
+}
+
+
+/* The smallblox is usually image only so remove background */
+.blox.smallblox, .blox.smallblox .content {
+	border: none;
+	background: none;
+}
