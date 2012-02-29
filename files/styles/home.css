@@ -88,22 +88,6 @@ Float on top with relative position and z-index
     }
 
 
-/* Extra tidbits like greying out image
-*/
-#home .post img {
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-}
-
-#home .post img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-}
-
-
-
-
 /* Debug remove */
 /*
   * { outline: 2px dotted red }
