@@ -9,15 +9,13 @@
 
 
 <h2>We build products that build strong Social Networks.</h2>
-<h4>That means social integration with your Web or Mobile platforms.</h4>
+<h4>we can help you integrate not only systems, but people.</h4>
 
 <p>It's not like the days of push advertising. You can't go viral without an enthusiastic public. And, that means a two-way level of interaction with your potential customers.</p>
 
-<p>It's the reason we develop Facebook, Twitter, Foursquare, LinkedIn, Tumblr, Google+ and dozens of other Social Networks Apps using their native API.</p>
+<p>It's the reason we develop Facebook, Twitter, Foursquare, LinkedIn, Tumblr, Google+ and dozens of other Social Networks Apps using their native API. And that's on both web and mobile platforms.</p>
 
-<p>We know social networks, having joined Six-degrees in 1996, and developed corporate ones since 1999. MingleVerse is a recent example. MingleVerse and a pair of headphones turn your virtual reality into an understandable experience. Without it, you would never know who is speaking in a social setting.</p>
-
-<p>With our experience, we can help you integrate not only systems, but people. And that's on both web and mobile platforms.</p>
+<p>We know social networks, having joined Six-degrees in 1996, and developed corporate ones since 1999. MingleVerse is a recent example. MingleVerse and a pair of headphones turn your virtual reality into an understandable experience. Without it, you would never know who is speaking in a social setting of over 5 or more users.</p>
 
 <img src="/static/img/logos/polaroid-icon/delicious.png" />
 <img src="/static/img/logos/polaroid-icon/digg.png" />
