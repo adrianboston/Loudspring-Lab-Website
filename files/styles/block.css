@@ -17,6 +17,7 @@ Possibly overridden in home or single css
   float: left;  /* always float the up to their neighbour */
   
   border: 1px solid grey; /* A radius on the top */
+  background: white;
   
   margin: 0 10px 10px 0;
   border-top-left-radius: 6px;
@@ -60,11 +61,18 @@ Possibly overridden in home or single css
 	background: white;
 	overflow: hidden:
 }
+	.blox .contents {
+		height: 100%;
+			
+	}
+	
 	.blox .summary {
+		height: 100%;
 		display: none;
 	}
 	
 	.blox .image {		
+		height: 100%;
 	}	
 
 	.blox .tiny {
@@ -79,6 +87,7 @@ Possibly overridden in home or single css
 	width: 100%;
 	clear: both;
 	float: left;
+	display: none;
 }
 	.blox .author {
 		clear: both;
