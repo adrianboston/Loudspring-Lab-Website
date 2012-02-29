@@ -10,24 +10,33 @@
 .rank-0 {
   width: 199px;
   height: 179px;	
-  margin: 0px 10px 10px 0px;
 }
 
 .rank-1 {
   width: 199px;
   height: 370px;	/* 370px? */	
-  margin: 0px 10px 10px 0px;
 }
 
 .rank-2 {
   width: 410px;
   height: 179px;
-  margin: 0px 10px 10px 0px;	
 }
 
 .rank-3 {
 	width: 410px;
 	height: 370px;	/* 370px? */
-	margin: 0px 10px 10px 0px;	
 }
 
+.blox .footer {
+	display: none;	
+}
+
+/*
+.rank-0 .content, .rank-2 .content {
+	height: 124px;
+}
+
+.rank-1 .content, .rank-3 .content {
+	height: 325px;
+}
+*/

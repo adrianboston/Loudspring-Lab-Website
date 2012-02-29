@@ -204,12 +204,12 @@ def error404(code=None):
 # E X E C U T I O N ###########################################################
 
 process_blog_posts()
-if USE_HEROKU:
-	run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
-elif USE_WSGI:
-	os.chdir(os.path.dirname(__file__)) 	 
-else:
-	run(host="localhost", port=8080)
+# if running wsgi then avoid run() in any form
+if __name__ == '__main__':
+	if USE_HEROKU:
+		run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
+	else:
+		run(host="localhost", port=8080)
 
 
 # E N D   O F   F I L E #######################################################
