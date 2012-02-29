@@ -7,7 +7,6 @@
 :size small
 :smallblox small,<a href="http://www.mingleverse.com"><img src="/static/img/etc/webapp_mingleversevideo_410x370rgb72dpi.jpg"/></a>;small,<a href="https://mingleverse.com/account/pricing/"/><img src="/static/img/etc/webapp_mingleverseprice_410x370rgb72dpi.jpg"/></a>;small,<a href="http://www.kukarma.com/"><img src="/static/img/etc/webapp_kukarma_410x370rgb72dpi.jpg"/>
 
-
 <h2>We build products that build strong Social Networks.</h2>
 <h4>we can help you integrate not only systems, but people.</h4>
 
@@ -33,6 +32,7 @@
 <img src="/static/img/logos/polaroid-icon/twitter.png" />
 <img src="/static/img/logos/polaroid-icon/yahoo.png" />
 <img src="/static/img/logos/polaroid-icon/youtube.png" />
-
-<img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="240"/>
 <img src="/static/img/logos/heroku/heroku-logo-light-234x60.png" width="234" height="60"/>
+<!--
+<img src="/static/img/logos/etc/SocialMediaOniPhone-320x480rgb72dpi.png" width="160" height="240"/>
+-->
