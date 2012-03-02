@@ -6,8 +6,29 @@
 @import url("home.css");
 
 
+
 /* Float all images on the single post page
 */
 p img {
-	margin: 2px;
+	margin: 4px;
 }
+
+
+
+
+
+
+/*
+z-index: 2 or 1??
+ 
+  -moz-transform: translate(500px, 500px) scale(0.002);
+  
+  -moz-transform: translate(500px, 500px) scale(0.002);
+  
+  .isotope-item {
+    -moz-transition-property: -moz-transform, opacity;
+    
+    
+  .isotope-item {
+    -moz-transition-duration: 0.3s;
+*/

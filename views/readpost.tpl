@@ -36,7 +36,7 @@
 	<div id="center"> <!-- main -->
 
 	<!-- branding -->
-	<div id="branding" class="blox rank-big dark">
+	<div id="branding" class="blox size-big dark">
 		<a href="/">
 			<div class="header">
 				<div class="title">
@@ -57,7 +57,7 @@
 	% title = val(post.meta,'title')
 	% author = val(post.meta, 'author')
 
-	<div id="post" class="blox size-full">
+	<div id="post" class="blox size-full50">
 		<div class="header">
 		   <div class="title">{{title}}</div> <!-- title:end -->
 		   <div class="subtitle">{{subtitle}}</div> <!-- title:end -->
@@ -81,6 +81,7 @@
 			% size = kv[0] #.split('=', 1)
 			% content = kv[1] #.split('=', 1)
 			<div class="blox smallblox size-{{size}}">
+				<div class="header"></div>
 				<div class="content">
 				  <div class="contents">{{!content}}</div>
 				</div>

@@ -7,6 +7,7 @@
 @import url(http://fonts.googleapis.com/css?family=Varela);
 /*@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 */
+@import url('http://fonts.googleapis.com/css?family=Cutive');
 
 @import url("markdown.css");
 @import url("square_blox.css");
@@ -15,11 +16,13 @@
 /* Put a small padding on the top
 */
 body {
-  font-family: 'Varela', sans-serif;
-  font-size: 8px;
+  font-family: 'Varela', Helvetica, Arial, sans-serif;
+  font-size: 100%;
   padding: 0 0 30px 10px;
   
-  background:url('/static/img/decor/small-x-graphite40-8x8rgb72dpi.png') repeat;   
+//  background:url('/static/img/decor/small-x-grey90-8x8rgb72dpi.png') repeat;   
+  background:url('/static/img/decor/small-x-bg-8x8rgb72dpi.png') repeat;  
+  
 }
 
 
@@ -47,7 +50,7 @@ div#footer {
   clear: both;
   text-align: center;
   margin: 10px 0 0 0;
-  font-size: 13px;
+  font-size: .8em;
 }
 	#footer ul li {
 	   display: inline;

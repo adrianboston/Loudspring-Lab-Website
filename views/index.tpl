@@ -27,7 +27,7 @@
 	<a href="/">
 		<div class="header">
 			<div class="title">
-				<img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" alt="our brand" width="410"></div>
+				<img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" title="^#169; Loudspring" width="410"></div>
 		</div>
 		<div class="content">
 			<div class="image"><img src="{{static}}" title="&#169; MarkOkrafka.com" width="410" height="325"></div>
@@ -74,7 +74,7 @@
 	<div class="content">    
 		<!-- image -->
 	    %if imgfeat: 
-		   	<div class="image"><img src="{{imgfeat}}" title="{{imgtitle}}" width="{{sizew}}" height="{{sizeh}}"/></div>
+		   	<div class="image"><img src="{{imgfeat}}" title="{{!imgtitle}}" width="{{sizew}}" height="{{sizeh}}"/></div>
 	    % end
 	    
 	    <div class="summary" >	<!-- summary -->
