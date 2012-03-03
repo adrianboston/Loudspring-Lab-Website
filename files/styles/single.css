@@ -5,17 +5,19 @@
  
 @import url("home.css");
 
-
-
 /* Float all images on the single post page
 */
 p img {
 	margin: 4px;
 }
 
-
-
-
+/* Navigation for social media, comm, etc in a blox
+*/
+#nav {
+	font-family: 'Jura', Arial, sans-serif;
+	background: none;
+	border: 1px none;
+}
 
 
 /*

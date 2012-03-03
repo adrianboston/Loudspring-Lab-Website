@@ -9,6 +9,7 @@
 */
 @import url('http://fonts.googleapis.com/css?family=Cutive');
 
+
 @import url("markdown.css");
 @import url("square_blox.css");
 /* @import url("sizes.css"); */
@@ -19,10 +20,8 @@ body {
   font-family: 'Varela', Helvetica, Arial, sans-serif;
   font-size: 100%;
   padding: 0 0 30px 10px;
-  
-//  background:url('/static/img/decor/small-x-grey90-8x8rgb72dpi.png') repeat;   
   background:url('/static/img/decor/small-x-bg-8x8rgb72dpi.png') repeat;  
-  
+  background: black; //rgb(37,38,39);
 }
 
 
@@ -72,24 +71,28 @@ a {
 /* Page Navigation
 Float on top with relative position and z-index
 */
-#page-navigation {
+div#page-navigation {
   clear: both;
   position: relative;
   top: -150px;
   text-align: center;
   z-index:999;
 }
-    #page-navigation #prev {
+    div#page-navigation #prev {
     	float: left;
     	position: relative;
     	left: -80px;
     }
-    #page-navigation #next {
+    div#page-navigation #next {
   		float: right;
 		position: relative;
     	left: 50px;
     }
 
+
+ul, ol {
+	list-style: none;	
+}
 
 /* Debug remove */
 /*

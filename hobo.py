@@ -57,6 +57,8 @@ DISQUS_SHORTNAME = blog_config.DISQUS_SHORTNAME \
         if hasattr(blog_config, 'DISQUS_SHORTNAME') else ''
 USE_WSGI = blog_config.USE_WSGI \
         if hasattr(blog_config, 'USE_WSGI') else False 
+IS_DEBUG = blog_config.IS_DEBUG \
+        if hasattr(blog_config, 'IS_DEBUG') else False 
 BLOGIMAGE = blog_config.BLOGIMAGE \
         if hasattr(blog_config, 'BLOGIMAGE') else ''        
 
@@ -173,6 +175,7 @@ def readpost(yy, mm, dd, slug):
     if locator not in POSTS:
         abort(404, 'Article not found!')
     post = POSTS[locator]
+        
     return {'title': TITLE,
             'post': post,
             'disqus_shortname': DISQUS_SHORTNAME}
@@ -207,7 +210,7 @@ process_blog_posts()
 # if running wsgi then avoid run() in any form
 if __name__ == '__main__':
 	if USE_HEROKU:
-		run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)))
+		run(host="0.0.0.0", port=int(os.environ.get("PORT", 80)), debug=IS_DEBUG)
 	else:
 		run(host="localhost", port=8080)
 

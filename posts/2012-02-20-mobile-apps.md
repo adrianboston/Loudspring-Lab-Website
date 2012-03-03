@@ -14,7 +14,7 @@
 
 <p>Since that time, we've been pushing the limits of iPhone with technology and user interaction. We are strong in U/X design, Objective-C, Cocoa, Carbon, OpenGL, Sound, OpenGL and animation. For us, it's all about the user.</p>
 
-<p>We can make you unique corporate Apps and boost your firm's mobile presence.</p>
+<p>We make unique Apps that boost your mobile presence.</p>
 
 
 

@@ -23,4 +23,10 @@ def remove_extra_spaces(data):
     p = re.compile(r'\s+')
     return p.sub(' ', data)	
     
-    	
+# post, type, post
+def filter_dict(dict, filterkey, filterval):
+	copy = []
+	for item in dict:
+		if key in dict:
+			if dict[key] == filterval:
+				copy.append(dict[key])

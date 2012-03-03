@@ -26,8 +26,15 @@ USE_HEROKU = True
 # app, respectively.
 USE_WSGI = False
 
+# POSTS_PER_PAGE
+# The number of posts that will appear on each page of index.html
+IS_DEBUG = True
+
+
 # DISQUS_SHORTNAME
 # Disqus is a free system used to manage comments at the bottom of blog posts.
 # After signing up, you will be issued a shortname -- put it here.  By default
 # developer mode of the script is enabled.
 DISQUS_SHORTNAME = "Loudspring"
+
+

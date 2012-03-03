@@ -21,7 +21,7 @@ Possibly overridden in home or single css
 	background: white;	
 	margin: 0 10px 10px 0;
 	
-	border: 1px dotted rgb(240,240,240); /* A radius on the top */
+	border: 1px solid black; /* A radius on the top */
 	border-radius: 2px;
   
 	/* CSS3 inset shadow:
@@ -37,8 +37,7 @@ Possibly overridden in home or single css
 
 .blox .header {
 //	font-family: 'Duru Sans', sans-serif;
-//	font-weight: light;
-	font-family: 'Jura';
+	font-family: 'Jura', Arial, sans-serif;
 		
 	float: left;
 	height: 45px;

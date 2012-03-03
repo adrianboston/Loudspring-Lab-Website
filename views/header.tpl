@@ -9,3 +9,18 @@
 </div>
 </div>
 </a>
+
+<div id="center">
+<div id="branding" class="blox dark">
+	<a href="/">
+		<div class="header">
+			<div class="title">
+				<img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" title="^#169; Loudspring" width="410"></div>
+		</div>
+</a>
+</div>
+
+<div class="blox">
+		<div class="content"><div class="image"><img src="{{static}}" title="&#169; MarkOkrafka.com" width="410" height="325"></div>
+		</div>
+</div>
