@@ -3,25 +3,23 @@
  * Secondary Color: #748C8C #5D6A6A #285D5D #ADC5C5 #B3C5C5
  */
 
-@import url(http://fonts.googleapis.com/css?family=Duru+Sans);
-@import url(http://fonts.googleapis.com/css?family=Varela);
-/*@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
-*/
+/*
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 @import url('http://fonts.googleapis.com/css?family=Cutive');
+*/
+@import url(http://fonts.googleapis.com/css?family=Varela);
 
 
 @import url("markdown.css");
 @import url("square_blox.css");
-/* @import url("sizes.css"); */
 
 /* Put a small padding on the top
 */
 body {
   font-family: 'Varela', Helvetica, Arial, sans-serif;
-  font-size: 100%;
+  font-size: 65%;
   padding: 0 0 30px 10px;
-  background:url('/static/img/decor/small-x-bg-8x8rgb72dpi.png') repeat;  
-  background: black; //rgb(37,38,39);
+  background:url('/static/img/decor/small-x-bg-8x8rgb72dpi.png') repeat; 
 }
 
 
@@ -35,6 +33,9 @@ div#wrapper {
   width: 100%;
 }	
 
+div#header {
+	width: 100%;	
+}
 
 /* main area within header and footer */
 div#center {

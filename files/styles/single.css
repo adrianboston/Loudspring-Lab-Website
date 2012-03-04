@@ -5,18 +5,43 @@
  
 @import url("home.css");
 
+
+#post.blox {
+	border: 1px none;
+}
+
+div#header {
+	width: 420px;	
+}
+
+/* main area within header and footer */
+div.column {
+	width: 420px;	/* That is 410 blox + 2 1px borders */
+	float:left;
+	overflow: hidden;
+	margin: 0 2px 0 0;	
+	min-height: 100%;
+}
+
+div#middle {
+	height: 1;	
+}
+
+
+/* Navigation for social media, comm, etc in a blox
+*/
+div#nav {
+	font-family: 'Jura', Helvetica, Arial, sans-serif;
+	font-size: .95em;
+	background: none;
+	border: 1px none;
+	float: left;
+}
+
 /* Float all images on the single post page
 */
 p img {
 	margin: 4px;
-}
-
-/* Navigation for social media, comm, etc in a blox
-*/
-#nav {
-	font-family: 'Jura', Arial, sans-serif;
-	background: none;
-	border: 1px none;
 }
 
 

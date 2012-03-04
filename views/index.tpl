@@ -15,7 +15,9 @@
 
 <body id="home">
 <div id="wrapper">
-<div id="center">
+
+<div id="header"></div>
+<div id="center" class="bloxcontainer">
 
 <div id="branding" class="blox dark">
 	<a href="/">

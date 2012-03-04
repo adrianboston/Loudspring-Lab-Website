@@ -12,7 +12,7 @@
 
 <p>Our designers and developers have been there since the very beginning, when only 500 iPhone Apps existed on the iTunes Store. That's before the iPad.</p>
 
-<p>Since that time, we've been pushing the limits of iPhone with technology and user interaction. We are strong in U/X design, Objective-C, Cocoa, Carbon, OpenGL, Sound, OpenGL and animation. For us, it's all about the user.</p>
+<p>Since that time, we've been pushing the limits of iPhone with technology and user interaction. We are strong in U/X design and native iOS (Core Audio, OpenGL, OpenAL) and Cloud applications.</p>
 
 <p>We make unique Apps that boost your mobile presence.</p>
 

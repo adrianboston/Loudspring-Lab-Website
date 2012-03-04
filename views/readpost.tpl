@@ -12,11 +12,10 @@
     <link href="/static/styles/single.css" media="Screen" rel="stylesheet" type="text/css" />
   % end 
 	<link href="/static/styles/print.css" media="print" rel="stylesheet" type="text/css" />
-	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />
-	
-	% include easing.tpl
-	
+	<link href="/static/styles/mobile.css" media="Screen" rel="stylesheet" type="text/css" />	
+	% # include easing.tpl	
 </head>
+
 	% type = val(post.meta,'type', "post")
 	% imgfeat = val(post.meta,'image-feat')
 	% imgtitle = val(post.meta, 'image-title', imgfeat)
@@ -32,24 +31,60 @@
 
 	<div id="wrapper">
 	
+	<div id="header"></div>
+	
 	<div id="center"> <!-- main -->
-	
 
-	<!-- branding -->
-	<div id="branding" class="blox dark">
-		<a href="/">
-			<div class="header">
-				<div class="title">
-					<img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" title="^#169; Loudspring" width="410"></div>
-			</div>
-	</a>
-	</div>
-	<!-- branding:end -->	
-	
+	<div id="left" class="column bloxcontainer">
+		<!-- branding -->
+		<div id="branding" class="blox dark">
+			<a href="/">
+				<div class="header">
+					<div class="title">
+						<img src="/static/img/Loudspring/Loudspring_Banner_410x45rgb72dpi.png" title="^#169; Loudspring" width="410"></div>
+				</div>
+		</a>
+		</div>
+		<!-- branding:end -->	
+		
+		<!-- featured image -->
+		<div class="blox">
+				<div class="content">
+				% if imgfeat:
+					<div class="image"><img src="{{imgfeat}}" title="{{!imgtitle}}" width="410" height="325"></div>
+				%else:
+					<div id="image"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" title="our brand" width="410"></div>
+				%end
+				</div>
+		</div>
+		<!-- featured image:end -->
+				
+		<!-- other blox -->
+		% smallblox = val(post.meta, 'smallblox')
+		% if smallblox:
+			% smallbloxes = smallblox.split(';')	#splitup csv into list
+			% for b in smallbloxes:
+				% kv = b.split(',')	#splitup csv into tupl
+				% size = kv[0] #.split('=', 1)
+				% content = kv[1] #.split('=', 1)
+				<div class="blox smallblox size-{{size}}">
+					<div class="header"></div>
+					<div class="content">
+					  <div class="contents">{{!content}}</div>
+					</div>
+				</div>
+			% end
+		% end
+		<!-- other blox:end -->
+		
+	</div> <!-- center:end -->
+
+	<div id="middle" class="column">
 	% subtitle = val(post.meta,'subtitle')
 	% title = val(post.meta,'title')
 	% author = val(post.meta, 'author')
 
+	<!-- post text -->
 	<div id="post" class="blox size-full">
 		<div class="header">
 		   <div class="title">{{title}}</div> <!-- title:end -->
@@ -64,44 +99,15 @@
 			    <div class="author">{{author}}</div>    	  
 		    </div> 						<!-- meta info:end -->	    
 	    </div>
-	</div> <!-- blox:end -->
-	
-	
-	<!-- featured image -->
-	<div class="blox">
-			<div class="content">
-			% if imgfeat:
-				<div class="image"><img src="{{imgfeat}}" title="{{!imgtitle}}" width="410" height="325"></div>
-			%else:
-				<div id="image"><img src="/static/img/Loudspring/Loudspring_Banner_trans410x48pxrgb72dpi.png" title="our brand" width="410"></div>
-			%end
-			</div>
-	</div>
-	<!-- featured image:end -->
-	
-	% include simplenav.tpl
-	
-	
-	<!-- other blox -->
-	% smallblox = val(post.meta, 'smallblox')
-	% if smallblox:
-		% smallbloxes = smallblox.split(';')	#splitup csv into list
-		% for b in smallbloxes:
-			% kv = b.split(',')	#splitup csv into tupl
-			% size = kv[0] #.split('=', 1)
-			% content = kv[1] #.split('=', 1)
-			<div class="blox smallblox size-{{size}}">
-				<div class="header"></div>
-				<div class="content">
-				  <div class="contents">{{!content}}</div>
-				</div>
-			</div>
-		% end
-	% end
-	<!-- other blox:end -->
+	</div> <!-- post text:end -->
 
-		
-	</div> <!-- main:end -->
+	</div>
+	
+	<div id="right" class="column">
+		% include simplenav.tpl
+	</div>
+	
+	</div>	<!-- center -->
 
 	% iscomment = val(post.meta,'comment')
 	% if iscomment and disqus_shortname:

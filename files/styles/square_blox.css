@@ -11,7 +11,9 @@ Possibly overridden in home or single css
 }
 */
 
-@import url(http://fonts.googleapis.com/css?family=Jura);
+/*@import url(http://fonts.googleapis.com/css?family=Jura);
+*/
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans);
 
 
 .blox {
@@ -22,13 +24,7 @@ Possibly overridden in home or single css
 	margin: 0 10px 10px 0;
 	
 	border: 1px solid black; /* A radius on the top */
-	border-radius: 2px;
-  
-	/* CSS3 inset shadow:
-	box-shadow: 0px 0px 2px grey;
-	-moz-box-shadow: 0px 0px 2px grey;
-	-webkit-box-shadow: 0px 0px 2px grey;
-	*/
+	border-radius: 2px;  
 }
 
 /* Any anchor is a block, uhm no */
@@ -36,8 +32,7 @@ Possibly overridden in home or single css
 }
 
 .blox .header {
-//	font-family: 'Duru Sans', sans-serif;
-	font-family: 'Jura', Arial, sans-serif;
+	font-family: 'Duru Sans', Helvetica, Arial, sans-serif;
 		
 	float: left;
 	height: 45px;
@@ -48,7 +43,7 @@ Possibly overridden in home or single css
 	background: rgb(235,235,235); //#D7D7D7;
 }
 	.blox .title {	
-		font-size: 1em;
+		font-size: .9em;
 		margin: 9px 0 0 9px;
 	}
 
